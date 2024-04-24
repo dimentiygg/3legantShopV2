@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product page</title>
+    
+    <script type="module" crossorigin src="/3legantShopV2/commonHelpers5.js"></script>
+    <link rel="modulepreload" crossorigin href="/3legantShopV2/assets/vendor-e383c042.js">
+    <link rel="modulepreload" crossorigin href="/3legantShopV2/assets/footer-c64ae4e5.js">
+    <link rel="stylesheet" href="/3legantShopV2/assets/vendor-24abd9de.css">
+    <link rel="stylesheet" href="/3legantShopV2/assets/product-4243d7f7.css">
+  </head>
+  <body>
+    <header>
+  <div class="announcement">
+    <svg width="17" height="16">
+      <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-ticket"></use>
+    </svg>
+    <p>30% off storewide — Limited time!</p>
+    <button
+      class="header-button"
+      type="button"
+      onclick="window.location.href='./html/shop.html'"
+    >
+      Shop Now
+      <svg class="arrow-right" width="16" height="16">
+        <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
+
+    <button class="close-button" type="button">
+      <svg width="11" height="10">
+        <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="container">
+    <nav>
+      <ul class="menu">
+        <li>
+          <button class="burger-button" type="button">
+            <svg class="burger-icon" width="12" height="10">
+              <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="logo" href="./index.html">3legant<span>.</span> </a>
+        </li>
+      </ul>
+      <ul class="header-nav-menu">
+        <li><a class="active" href="">Home</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+      <ul class="header-menu">
+        <li>
+          <button class="header-nav-button" type="button">
+            <svg class="header-nav-icon" width="22" height="20">
+              <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-search"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="header-nav-button" type="button">
+            <svg class="header-nav-icon" width="22" height="22">
+              <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-user"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="header-nav-button" type="button">
+            <svg class="header-nav-icon" width="22" height="22">
+              <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-shopping-bag"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <div class="notification"><p>2</p></div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="backdrop hidden">
+    <div class="mobile-menu">
+      <div>
+        <a class="logo" href="./index.html">3legant<span>.</span></a>
+        <button class="mobile-close-button" type="button">
+          <svg width="16" height="16">
+            <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-close"></use>
+          </svg>
+        </button>
+        <svg class="search-icon" width="22" height="22">
+          <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-search"></use>
+        </svg>
+        <input type="text" placeholder="search" />
+
+        <ul class="accordion-wrapper">
+          <li class="non-accordion-item">
+            <a href="">Home</a>
+          </li>
+          <li class="accordion ac">
+            <a class="accordion-link ac-link" href="">
+              Shop
+              <button
+                type="button"
+                class="accordion-button ac-trigger"
+                title="down"
+              >
+                <svg class="arrow">
+                  <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-down"></use>
+                </svg>
+              </button>
+            </a>
+            <div class="accordion-panel ac-panel">
+              <p class="Something">Something</p>
+
+              <p class="Something">Something2</p>
+
+              <p class="Something">Something3</p>
+            </div>
+          </li>
+          <li class="accordion ac">
+            <a class="accordion-link ac-link" href="">
+              Product
+              <button
+                type="button"
+                class="accordion-button ac-trigger"
+                title="down"
+              >
+                <svg class="arrow">
+                  <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-down"></use>
+                </svg>
+              </button>
+            </a>
+            <div class="accordion-panel ac-panel">
+              <p class="Something">Something4</p>
+
+              <p class="Something">Something5</p>
+
+              <p class="Something">Something5</p>
+            </div>
+          </li>
+          <li class="non-accordion-item">
+            <a href="">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-text" href="">Cart</a>
+            <ul class="notification-list">
+              <li>
+                <button class="shopping-bag-button" type="button">
+                  <svg class="shopping-bag-icon" width="22" height="22">
+                    <use
+                      href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-shopping-bag"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <div class="notification"><p>2</p></div>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-text" href="">Wishlist</a>
+            <ul class="notification-list">
+              <li>
+                <button class="heart-button">
+                  <svg class="heart" width="22" height="19">
+                    <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-heart"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <div class="notification"><p>2</p></div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <button class="sign-button" type="button">Sign In</button>
+        <ul class="social-list">
+          <li>
+            <button>
+              <svg width="24" height="24">
+                <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-instagram"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button>
+              <svg width="24" height="24">
+                <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-facebook"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button>
+              <svg width="24" height="24">
+                <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-youtube"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <hero class="hero">
+  <div class="container">
+    <ul class="breadcrumb-list">
+      <li>
+        <a href="../../index.html">Home</a
+        ><svg width="12" height="12">
+          <use href="../../public/symbol-defs.svg#icon-chevron-right"></use>
+        </svg>
+      </li>
+      <li>
+        <a href="">Shop</a
+        ><svg width="12" height="12">
+          <use href="../../public/symbol-defs.svg#icon-chevron-right"></use>
+        </svg>
+      </li>
+      <li>
+        <a href="">Living Room</a
+        ><svg width="12" height="12">
+          <use href="../../public/symbol-defs.svg#icon-chevron-right"></use>
+        </svg>
+      </li>
+      <li>
+        <a class="active" href="">Product</a
+        ><svg width="12" height="12">
+          <use href="../../public/symbol-defs.svg#icon-chevron-right"></use>
+        </svg>
+      </li>
+    </ul>
+
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide swiper-slide-product">
+          <picture>
+            <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+            <source
+              id="mySource1"
+              media="(min-width: 1px)"
+              srcset="
+                ../../img/products/mobile/black_tray_table.png    1x,
+                ../../img/products/mobile/black_tray_table@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              alt="Black Tray table"
+              src="../../img/products/mobile/black_tray_table.png"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide swiper-slide-product">
+          <picture>
+            <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+            <source
+              id="mySource2"
+              media="(min-width: 1px)"
+              srcset="
+                ../../img/products/mobile/black_tray_table.png    1x,
+                ../../img/products/mobile/black_tray_table@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              alt="Black Tray table"
+              src="../../img/products/mobile/black_tray_table.png"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide swiper-slide-product">
+          <picture>
+            <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+            <source
+              id="mySource3"
+              media="(min-width: 1px)"
+              srcset="
+                ../../img/products/mobile/black_tray_table.png    1x,
+                ../../img/products/mobile/black_tray_table@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              alt="Black Tray table"
+              src="../../img/products/mobile/black_tray_table.png"
+            />
+          </picture>
+        </div>
+        ...
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev">
+        <div class="swiper-button-next">
+          <button class="sbp">
+            <svg width="24" height="25">
+              <use href="../../public/symbol-defs.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-button-next">
+        <div class="swiper-button-next">
+          <button class="sbn">
+            <svg width="24" height="25">
+              <use href="../../public/symbol-defs.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <ul class="product-badges-list">
+        <li>
+          <div><p>new</p></div>
+        </li>
+        <li>
+          <div><p>-50%</p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</hero>
+
+      <section class="content">
+  <div class="container">
+    <div class="content-reviews-wrapper">
+      <ul class="raiting-list">
+        <li>
+          <svg width="16" height="16">
+            <use href="../../public/symbol-defs.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li>
+          <svg width="16" height="16">
+            <use href="../../public/symbol-defs.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li>
+          <svg width="16" height="16">
+            <use href="../../public/symbol-defs.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li>
+          <svg width="16" height="16">
+            <use href="../../public/symbol-defs.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li>
+          <svg width="16" height="16">
+            <use href="../../public/symbol-defs.svg#icon-star"></use>
+          </svg>
+        </li>
+      </ul>
+      <p class="content-reviews">11 Reviews</p>
+    </div>
+    <div class="info-wrapper">
+      <h2 class="content-title">Tray Table</h2>
+      <p class="content-text">
+        Buy one or buy a few and make every space where you sit more convenient.
+        Light and easy to move around with removable tray top, handy for serving
+        snacks.
+      </p>
+      <ul class="content-price">
+        <li><p>$199.00</p></li>
+        <li><p>$400.00</p></li>
+      </ul>
+    </div>
+    <div class="timer-wrapper">
+      <p class="timer-text">Offer expires in:</p>
+
+      <div class="timer">
+        <div class="field">
+          <div class="value-wrapper"><p class="value" data-days>00</p></div>
+          <p class="label">Days</p>
+        </div>
+        <div class="field">
+          <div class="value-wrapper"><p class="value" data-hours>00</p></div>
+          <p class="label">Hours</p>
+        </div>
+        <div class="field">
+          <div class="value-wrapper"><p class="value" data-minutes>00</p></div>
+          <p class="label">Minutes</p>
+        </div>
+        <div class="field">
+          <div class="value-wrapper"><p class="value" data-seconds>00</p></div>
+          <p class="label">Seconds</p>
+        </div>
+      </div>
+    </div>
+    <div class="swatches">
+      <p class="swatches-text">Measurments</p>
+      <p class="measurments">17 1/2x20 5/8 "</p>
+      <div class="choose-color-wrapper">
+        <p class="color-text">Choose Color</p>
+        <svg width="24" height="24">
+          <use href="../../public/symbol-defs.svg#icon-chevron-right"></use>
+        </svg>
+      </div>
+      <p class="content-color">Black</p>
+      <ul class="content-color-list">
+        <li class="content-item content-active" data-color="Black">
+          <picture>
+            <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+            <source
+              media="(min-width: 1px)"
+              srcset="
+                ../../img/products/mobile/black_tray_table_color.png    1x,
+                ../../img/products/mobile/black_tray_table_color@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              alt="Black Tray table"
+              src="../../img/products/mobile/black_tray_table_color.png"
+            />
+          </picture>
+        </li>
+        <li class="content-item" data-color="Sand">
+          <picture>
+            <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+            <source
+              media="(min-width: 1px)"
+              srcset="
+                ../../img/products/mobile/sand_tray_table_color.png    1x,
+                ../../img/products/mobile/sand_tray_table_color@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              alt="Sand Tray table"
+              src="../../img/products/mobile/sand_tray_table_color.png"
+            />
+          </picture>
+        </li>
+        <li class="content-item" data-color="Red">
+          <picture>
+            <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+            <source
+              media="(min-width: 1px)"
+              srcset="
+                ../../img/products/mobile/red_tray_table_color.png    1x,
+                ../../img/products/mobile/red_tray_table_color@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              alt="Red Tray table"
+              src="../../img/products/mobile/red_tray_table_color.png"
+            />
+          </picture>
+        </li>
+        <li class="content-item" data-color="White">
+          <picture>
+            <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+            <source
+              media="(min-width: 1px)"
+              srcset="
+                ../../img/products/mobile/white_tray_table_color.png    1x,
+                ../../img/products/mobile/white_tray_table_color@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              alt="White Tray table"
+              src="../../img/products/mobile/white_tray_table_color.png"
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-nav-container">
+      <div class="footer-logo-wrapper">
+        <a class="logo-footer" href="./index.html">3legant<span>.</span> </a>
+        <div class="rectangle"></div>
+        <a class="gift" href="">Gift & Decoration Store</a>
+      </div>
+
+      <ul class="footer-list-nav">
+        <li><a href="">Home</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-wrapper">
+      <ul class="privacy-list-desktop">
+        <li>
+          <p class="copyright">Copyright © 2023 3legant. All rights reserved</p>
+        </li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Terms of Use</a></li>
+      </ul>
+      <ul class="social-list-footer">
+        <li>
+          <button>
+            <svg width="24" height="24">
+              <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-instagram-white"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button>
+            <svg width="24" height="24">
+              <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-facebook"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button>
+            <svg width="24" height="24">
+              <use href="/3legantShopV2/assets/symbol-defs-771c3ecf.svg#icon-youtube"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="privacy-wrapper">
+      <ul class="privacy-list">
+        <li>
+          <p class="copyright-text">
+            Copyright © 2023 3legant. All rights reserved
+          </p>
+        </li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Terms of Use</a></li>
+      </ul>
+      <p class="copyright-mobile">
+        Copyright © 2023 3legant. All rights reserved
+      </p>
+    </div>
+
+    <!-- </div> -->
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
