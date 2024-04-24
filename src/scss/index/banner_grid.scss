@@ -1,0 +1,172 @@
+.banner-grid {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.menu-banners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid $neutral-07-100;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    color: $neutral-07-100;
+  }
+
+  li {
+    position: relative;
+    min-width: 311px;
+    width: 100%;
+  }
+
+  img {
+    height: 275px;
+    min-width: 311px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.big-img-wrapper {
+  position: relative;
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid $neutral-07-100;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    color: $neutral-07-100;
+  }
+}
+
+.luxury_sofa {
+  margin-bottom: 16px;
+  height: 350px;
+  object-position: 50% 70%;
+  min-width: 311px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.living-room-title {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  font-family: $second-family;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 121%;
+  letter-spacing: -0.02em;
+  color: $neutral-07-100;
+}
+
+.living-room-button {
+  position: absolute;
+  top: 74px;
+  left: 32px;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  color: $neutral-07-100;
+}
+
+.kitchen-title,
+.bedroom-title {
+  position: absolute;
+  top: 82px;
+  left: 32px;
+  font-family: $second-family;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 121%;
+  letter-spacing: -0.02em;
+  color: $neutral-07-100;
+}
+.kitchen-button,
+.bedroom-button {
+  position: absolute;
+  top: 125px;
+  left: 32px;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  color: $neutral-07-100;
+}
+
+.arrow-right {
+  stroke: $neutral-07-100;
+}
+
+//=================================TABLET SRYLES==================================================
+@media (min-width: 768px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .big-img-wrapper {
+    width: 100%;
+  }
+
+  .menu-banners {
+    width: 100%;
+
+    li {
+      height: -webkit-fill-available;
+    }
+    img {
+      min-height: 180px;
+      object-fit: cover;
+      height: auto;
+    }
+  }
+
+  .luxury_sofa {
+    height: auto;
+    min-height: 377px;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+}
+
+//=================================/TABLET STYLES==================================================
+// ================================DESKTOP STYLES==========================================
+@media (min-width: 1024px) {
+  .flex {
+    gap: 24px;
+  }
+  .big-img-wrapper {
+    max-width: 548px;
+  }
+  .menu-banners {
+    max-width: 548px;
+  }
+}
+
+// ================================/DESKTOP STYLES==========================================

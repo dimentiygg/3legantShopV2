@@ -1,0 +1,91 @@
+.values {
+  padding-top: 32px;
+}
+
+.values-list {
+  min-width: 312px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Два столбца с одинаковой шириной */
+  grid-gap: 20px; /* Отступ между элементами */
+
+  li {
+    width: 100%;
+  }
+}
+
+.values-card-container {
+  min-width: 152px;
+  padding: 32px 16px;
+  height: 198px;
+  background: $neutral-02-100;
+
+  h3 {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 16px;
+    font-family: v$font-family;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 157%;
+    color: $neutral-07-100;
+  }
+
+  p {
+    margin: 0 auto;
+    width: 70px;
+    margin-top: 8px;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: $neutral-04-100;
+  }
+}
+
+.values-list li:first-child p {
+  width: 80px;
+}
+
+.values-list li:last-child p {
+  width: 100px;
+}
+
+.values-svgs {
+  margin: 0 auto;
+  display: block;
+  fill: none;
+  stroke: $neutral-07-100;
+}
+
+//=================================TABLET SRYLES==================================================
+@media (min-width: 768px) {
+  .values-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .values-card-container {
+    min-width: 152px;
+    padding: 32px 16px;
+    height: 198px;
+    background: $neutral-02-100;
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .values-svgs {
+    margin: 0;
+    display: block;
+    fill: none;
+    stroke: $neutral-07-100;
+  }
+}
+//=================================/TABLET SRYLES==================================================

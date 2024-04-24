@@ -1,0 +1,121 @@
+.banner-img {
+  width: 100vw;
+  height: 367px;
+  object-fit: cover;
+}
+
+.banner-container {
+  width: -webkit-fill-available;
+  padding: 58px 32px;
+  min-width: 320px;
+  height: 367px;
+  background: $neutral-02-100;
+}
+
+.sale {
+  margin-bottom: 16px;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $blue;
+}
+
+h2 {
+  width: 290px;
+  margin-bottom: 16px;
+  font-family: $second-family;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 112%;
+  letter-spacing: -0.02em;
+  color: $neutral-07-100;
+
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.banner-text {
+  width: 311px;
+  margin-bottom: 24px;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: $neutral-07-100;
+  width: 400px;
+}
+
+.banner-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid $neutral-07-100;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  color: $neutral-07-100;
+}
+
+//=================================TABLET SRYLES==================================================
+@media (min-width: 768px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+  }
+}
+//=================================/TABLET SRYLES==================================================
+// ================================DESKTOP STYLES===========================================
+@media (min-width: 1024px) {
+  .banner-img {
+    width: 100%;
+    max-height: 532px;
+    height: auto;
+    max-width: 720px;
+  }
+  .banner-container {
+    max-height: 532px;
+    max-width: 720px;
+    height: auto;
+    width: auto;
+    flex-grow: 2;
+  }
+}
+// ================================/DESKTOP STYLES===========================================
+
+//=================================TABLET SRYLES==================================================
+@media (min-width: 768px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+  }
+}
+//=================================/TABLET SRYLES==================================================
+// ================================DESKTOP STYLES===========================================
+@media (min-width: 1024px) {
+  .banner-img {
+    width: 100%;
+    max-height: 532px;
+    height: auto;
+    max-width: 720px;
+  }
+  .banner-container {
+    max-height: 532px;
+    max-width: 720px;
+    height: auto;
+    width: auto;
+    flex-grow: 2;
+  }
+  .banner-text {
+    width: 400px;
+  }
+}
+// ================================/DESKTOP STYLES===========================================

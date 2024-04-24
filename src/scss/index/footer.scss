@@ -1,0 +1,178 @@
+.footer {
+  min-width: 375px;
+  padding-bottom: 72px;
+  background: $neutral-06-100;
+
+  p {
+    width: fit-content;
+    margin: 0 auto;
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 167%;
+    color: $neutral-03-100;
+  }
+}
+
+.logo-footer {
+  display: block;
+  margin: 0 auto;
+  padding-top: 48px;
+  margin-bottom: 16px;
+  font-family: $second-family;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #fff;
+
+  span {
+    color: $neutral-04-100;
+  }
+}
+
+.rectangle {
+  margin: 0 auto;
+  margin-bottom: 16px;
+  width: 1px;
+  height: 24px;
+  background: $neutral-04-100;
+  transform: rotate(-90deg);
+}
+
+.footer-list-nav {
+  display: flex;
+  margin-bottom: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  a {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    text-align: center;
+    color: $neutral-03-100;
+  }
+}
+
+.gift {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  text-align: center;
+  color: $neutral-03-100;
+}
+
+.footer-wrapper {
+  margin: 0 auto;
+
+  border-top: 0.5px solid $neutral-04-100;
+  padding: 24px 0px;
+  width: 311px;
+}
+
+.social-list-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
+
+  svg {
+    fill: none;
+    stroke: #fefefe;
+  }
+}
+
+.privacy-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 28px;
+  font-family: $second-family;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 167%;
+  color: $neutral-01-100;
+}
+
+// ======================================DESKTOP STYLES================================================
+@media (min-width: 1024px) {
+  .footer {
+    padding: 80px 64px 32px 64px;
+  }
+  .logo-footer {
+    margin: 0;
+    padding: 0;
+  }
+
+  .rectangle {
+    margin: 0;
+    transform: rotate(0);
+  }
+  .gift {
+    margin: 0;
+  }
+
+  .footer-list-nav {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  .footer-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 49px;
+  }
+
+  .footer-logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 16px 0px;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.5px solid $neutral-04-100;
+  }
+
+  .privacy-wrapper {
+    display: inline;
+  }
+
+  .privacy-list-desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+
+    a {
+      font-family: $second-family;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 167%;
+      color: $neutral-01-100;
+    }
+  }
+}
+// ======================================/DESKTOP STYLES================================================

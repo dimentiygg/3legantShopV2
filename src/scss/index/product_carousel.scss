@@ -1,0 +1,188 @@
+.product-carousel {
+  position: relative;
+}
+.new-container {
+  margin-right: 0;
+
+  h2 {
+    width: 125px;
+    margin-bottom: 40px;
+    font-family: $second-family;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 112%;
+    letter-spacing: -0.02em;
+    color: $brand-color;
+  }
+}
+
+.carousel-list {
+  display: flex;
+  gap: 16px;
+  img {
+    min-width: 231px;
+    min-height: 308px;
+  }
+  li {
+    position: relative;
+  }
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 12px 0 40px 0;
+
+  h3 {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 162%;
+    color: $neutral-07-100;
+  }
+
+  p {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 157%;
+    color: $neutral-07-100;
+  }
+}
+
+.badges-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  div {
+    border-radius: 4px;
+    padding: 4px 14px;
+    width: 67px;
+    height: 24px;
+    background: #fff;
+  }
+
+  p {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: $neutral-07-100;
+  }
+}
+.badges-list li:last-child {
+  div {
+    background: $green;
+  }
+  p {
+    color: $neutral-01-100;
+  }
+}
+
+.favourites {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  border-radius: 32px;
+  padding: 6px;
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 8px 16px -8px rgba(15, 15, 15, 0.12);
+  background: #fff;
+  border: none;
+  border-color: transparent;
+
+  svg {
+    fill: $neutral-04-100;
+  }
+}
+
+.price-list {
+  position: relative;
+  height: 22px;
+}
+
+.disabled-price {
+  position: absolute;
+  bottom: 22px;
+  left: 66px;
+
+  p {
+    font-weight: 400;
+    text-decoration: line-through;
+    color: $neutral-04-100;
+  }
+}
+
+.carousel-container {
+  min-width: 311px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.carousel-container::-webkit-scrollbar {
+  height: 4px;
+}
+
+.carousel-container::-webkit-scrollbar-track {
+  background: $neutral-03-100;
+  border-radius: 80px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background: $neutral-05-100;
+  border-radius: 80px;
+}
+
+.raiting-list {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.more-products-button {
+  margin-top: 40px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid $neutral-07-100;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  color: $neutral-07-100;
+}
+
+//=================================TABLET SRYLES==================================================
+@media (min-width: 768px) {
+  .carousel-list {
+    width: max-content;
+    img {
+      width: 262px;
+      max-width: 262px;
+      height: 100%;
+      max-height: 349px;
+      object-fit: cover;
+    }
+  }
+}
+//=================================/TABLET SRYLES==================================================
+
+// ================================DESKTOP STYLES===========================================
+@media (min-width: 1024px) {
+}
+// ================================/DESKTOP STYLES===========================================
