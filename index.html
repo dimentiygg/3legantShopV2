@@ -2,83 +2,1080 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>3legant shop</title>
     
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/3legantShopV2/commonHelpers4.js"></script>
+    <link rel="modulepreload" crossorigin href="/3legantShopV2/assets/vendor-e383c042.js">
+    <link rel="stylesheet" href="/3legantShopV2/assets/vendor-24abd9de.css">
+    <link rel="stylesheet" href="/3legantShopV2/assets/index-293b4155.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+    <header>
+      <div class="announcement">
+        <svg width="17" height="16">
+          <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-ticket"></use>
+        </svg>
+        <p>30% off storewide — Limited time!</p>
+        <button
+          class="header-button"
+          type="button"
+          onclick="window.location.href='./html/shop.html'"
+        >
+          Shop Now
+          <svg class="arrow-right" width="16" height="16">
+            <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+        <button class="close-button" type="button">
+          <svg width="11" height="10">
+            <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
 
+      <div class="container">
+        <nav>
+          <ul class="menu">
+            <li>
+              <button class="burger-button" type="button">
+                <svg class="burger-icon" width="12" height="10">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-burger"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="logo" href="./index.html">3legant<span>.</span> </a>
+            </li>
+          </ul>
+          <ul class="header-nav-menu">
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+          <ul class="header-menu">
+            <li>
+              <button class="header-nav-button" type="button">
+                <svg class="header-nav-icon" width="22" height="20">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-search"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="header-nav-button" type="button">
+                <svg class="header-nav-icon" width="22" height="22">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-user"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="header-nav-button" type="button">
+                <svg class="header-nav-icon" width="22" height="22">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-shopping-bag"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <div class="notification"><p>2</p></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="backdrop hidden">
+        <div class="mobile-menu">
+          <div>
+            <a class="logo" href="./index.html">3legant<span>.</span></a>
+            <button class="mobile-close-button" type="button">
+              <svg width="16" height="16">
+                <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-close"></use>
+              </svg>
+            </button>
+            <svg class="search-icon" width="22" height="22">
+              <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-search"></use>
+            </svg>
+            <input type="text" placeholder="search" />
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
-    </section>
+            <ul class="accordion-wrapper">
+              <li class="non-accordion-item">
+                <a href="">Home</a>
+              </li>
+              <li class="accordion ac">
+                <a class="accordion-link ac-link" href="">
+                  Shop
+                  <button
+                    type="button"
+                    class="accordion-button ac-trigger"
+                    title="down"
+                  >
+                    <svg class="arrow">
+                      <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-down"></use>
+                    </svg>
+                  </button>
+                </a>
+                <div class="accordion-panel ac-panel">
+                  <p class="Something">Something</p>
 
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
+                  <p class="Something">Something2</p>
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
+                  <p class="Something">Something3</p>
+                </div>
+              </li>
+              <li class="accordion ac">
+                <a class="accordion-link ac-link" href="">
+                  Product
+                  <button
+                    type="button"
+                    class="accordion-button ac-trigger"
+                    title="down"
+                  >
+                    <svg class="arrow">
+                      <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-down"></use>
+                    </svg>
+                  </button>
+                </a>
+                <div class="accordion-panel ac-panel">
+                  <p class="Something">Something4</p>
+
+                  <p class="Something">Something5</p>
+
+                  <p class="Something">Something5</p>
+                </div>
+              </li>
+              <li class="non-accordion-item">
+                <a href="">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-text" href="">Cart</a>
+                <ul class="notification-list">
+                  <li>
+                    <button class="shopping-bag-button" type="button">
+                      <svg class="shopping-bag-icon" width="22" height="22">
+                        <use
+                          href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-shopping-bag"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <div class="notification"><p>2</p></div>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-text" href="">Wishlist</a>
+                <ul class="notification-list">
+                  <li>
+                    <button class="heart-button">
+                      <svg class="heart" width="22" height="19">
+                        <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-heart"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <div class="notification"><p>2</p></div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <button class="sign-button" type="button">Sign In</button>
+            <ul class="social-list">
+              <li>
+                <button>
+                  <svg width="24" height="24">
+                    <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-instagram"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <svg width="24" height="24">
+                    <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-facebook"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <svg width="24" height="24">
+                    <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-youtube"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <hero>
+      <div class="container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/3legantShopV2/assets/simply_sofa-4c48dc12.png 1x, /3legantShopV2/assets/simply_sofa@2x-2e3eb7c4.png 2x"
+                  type="image/png"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/3legantShopV2/assets/simply_sofa-bd02f4f6.png 1x, /3legantShopV2/assets/simply_sofa@2x-585457e2.png 2x"
+                  type="image/png"
+                />
+                <img
+                  class="hero-img"
+                  alt="comfortable sofa"
+                  src="./images/others/mobile/simply_sofa.png"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/3legantShopV2/assets/simply_sofa-4c48dc12.png 1x, /3legantShopV2/assets/simply_sofa@2x-2e3eb7c4.png 2x"
+                  type="image/png"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/3legantShopV2/assets/simply_sofa-bd02f4f6.png 1x, /3legantShopV2/assets/simply_sofa@2x-585457e2.png 2x"
+                  type="image/png"
+                />
+                <img
+                  class="hero-img"
+                  alt="comfortable sofa"
+                  src="/3legantShopV2/assets/simply_sofa-bd02f4f6.png"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/3legantShopV2/assets/simply_sofa-4c48dc12.png 1x, /3legantShopV2/assets/simply_sofa@2x-2e3eb7c4.png 2x"
+                  type="image/png"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/3legantShopV2/assets/simply_sofa-bd02f4f6.png 1x, /3legantShopV2/assets/simply_sofa@2x-585457e2.png 2x"
+                  type="image/png"
+                />
+                <img
+                  class="hero-img"
+                  alt="comfortable sofa"
+                  src="/3legantShopV2/assets/simply_sofa-bd02f4f6.png"
+                />
+              </picture>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+        </div>
+
+        <div class="hero-wrapper">
+          <h1 class="hero-title">
+            Simply Unique<span>/</span> Simply Better<span>.</span>
+          </h1>
+          <div class="text">
+            <button class="hero-button" type="button">3legant</button>
+            <p class="hero-text">
+              is a gift & decorations store based in HCMC, Vietnam. Est since
+              2019.
+            </p>
+          </div>
+        </div>
+      </div>
+    </hero>
+    <main>
+      <section class="banner-grid">
+        <div class="container flex">
+          <div class="big-img-wrapper">
+            <picture>
+              <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+              <source
+                media="(max-width: 1158px)"
+                srcset="/3legantShopV2/assets/big_luxury_sofa-fb01276b.png 1x, /3legantShopV2/assets/big_luxury_sofa@2x-40b033b5.png 2x"
+                type="image/png"
+              />
+              <img
+                class="luxury_sofa"
+                alt="luxury sofa"
+                src="/3legantShopV2/assets/big_luxury_sofa-fb01276b.png"
+              />
+            </picture>
+            <h2 class="living-room-title">Living Room</h2>
+            <button
+              class="living-room-button"
+              type="button"
+              onclick="window.location.href='./html/shop.html'"
+            >
+              Shop Now
+              <svg class="arrow-right" width="16" height="16">
+                <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="menu-banners">
+            <li>
+              <picture>
+                <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                <source
+                  media="(max-width: 1158px)"
+                  srcset="/3legantShopV2/assets/wardrobe-5842495f.png 1x, /3legantShopV2/assets/wardrobe@2x-eea1400c.png 2x"
+                  type="image/png"
+                />
+                <img alt="wardrobe" src="/3legantShopV2/assets/wardrobe-5842495f.png" />
+              </picture>
+              <h2 class="bedroom-title">Bedroom</h2>
+              <button
+                class="bedroom-button"
+                type="button"
+                onclick="window.location.href='./html/shop.html'"
+              >
+                Shop Now
+                <svg class="arrow-right" width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <picture>
+                <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                <source
+                  media="(max-width: 1158px)"
+                  srcset="/3legantShopV2/assets/toaster-dcc90b75.png 1x, /3legantShopV2/assets/toaster@2x-cc0560c5.png 2x"
+                  type="image/png"
+                />
+                <img alt="toaster" src="/3legantShopV2/assets/toaster-dcc90b75.png" />
+              </picture>
+              <h2 class="kitchen-title">Kitchen</h2>
+              <button
+                class="kitchen-button"
+                type="button"
+                onclick="window.location.href='./html/shop.html'"
+              >
+                Shop Now
+                <svg class="arrow-right" width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product-carousel">
+        <div class="container new-container">
+          <h2 class="">New Arrivals</h2>
+          <div class="carousel-container">
+            <ul class="carousel-list">
+              <li>
+                <picture>
+                  <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                  <source
+                    media="(min-width: 1px)"
+                    srcset="/3legantShopV2/assets/loveseat_sofa-6c151dbd.png 1x, /3legantShopV2/assets/loveseat_sofa@2x-f0b9535d.png 2x"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Loveseat sofa"
+                    src="/3legantShopV2/assets/loveseat_sofa-6c151dbd.png"
+                  />
+                </picture>
+                <div class="card-description">
+                  <ul class="raiting-list">
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                  <h3>Loveseat Sofa</h3>
+                  <ul class="price-list">
+                    <li><p>$199.00</p></li>
+                    <li class="disabled-price"><p>$400.00</p></li>
+                  </ul>
+                  <ul class="badges-list">
+                    <li>
+                      <div class=""><p>new</p></div>
+                    </li>
+                    <li>
+                      <div><p>-50%</p></div>
+                    </li>
+                  </ul>
+                  <button class="favourites" type="button">
+                    <svg width="20" height="20">
+                      <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <picture>
+                  <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                  <source
+                    media="(min-width: 1px)"
+                    srcset="/3legantShopV2/assets/table_lamp_diff-162731c0.png 1x, /3legantShopV2/assets/table_lamp_diff@2x-fa681202.png 2x"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Table lamp"
+                    src="/3legantShopV2/assets/table_lamp_diff-162731c0.png"
+                  />
+                </picture>
+                <div class="card-description">
+                  <ul class="raiting-list">
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                  <h3>Table Lamp</h3>
+                  <p>$24.99</p>
+                  <ul class="badges-list">
+                    <li>
+                      <div class=""><p>new</p></div>
+                    </li>
+                    <li>
+                      <div><p>-50%</p></div>
+                    </li>
+                  </ul>
+                  <button class="favourites" type="button">
+                    <svg width="20" height="20">
+                      <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <picture>
+                  <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                  <source
+                    media="(min-width: 1px)"
+                    srcset="/3legantShopV2/assets/table_lamp-c1d5b865.png 1x, /3legantShopV2/assets/table_lamp@2x-75ca22e9.png 2x"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Beige table lamp"
+                    src="/3legantShopV2/assets/table_lamp-c1d5b865.png"
+                  />
+                </picture>
+                <div class="card-description">
+                  <ul class="raiting-list">
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                  <h3>Beige Table Lamp</h3>
+                  <p>$24.99</p>
+                  <ul class="badges-list">
+                    <li>
+                      <div class=""><p>new</p></div>
+                    </li>
+                    <li>
+                      <div><p>-50%</p></div>
+                    </li>
+                  </ul>
+                  <button class="favourites" type="button">
+                    <svg width="20" height="20">
+                      <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <picture>
+                  <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                  <source
+                    media="(min-width: 1px)"
+                    srcset="/3legantShopV2/assets/bamboo_basket-6cb201de.png 1x, /3legantShopV2/assets/bamboo_basket@2x-85f2e2aa.png 2x"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Bamboo basket"
+                    src="/3legantShopV2/assets/bamboo_basket-6cb201de.png"
+                  />
+                </picture>
+                <div class="card-description">
+                  <ul class="raiting-list">
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                  <h3>Bamboo basket</h3>
+                  <p>$24.99</p>
+                  <ul class="badges-list">
+                    <li>
+                      <div class=""><p>new</p></div>
+                    </li>
+                    <li>
+                      <div><p>-50%</p></div>
+                    </li>
+                  </ul>
+                  <button class="favourites" type="button">
+                    <svg width="20" height="20">
+                      <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <picture>
+                  <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                  <source
+                    media="(min-width: 1px)"
+                    srcset="/3legantShopV2/assets/toaster_product-eacd2b96.png 1x, /3legantShopV2/assets/toaster_product@2x-df5f5da6.png 2x"
+                    type="image/png"
+                  />
+                  <img
+                    alt="toaster"
+                    src="/3legantShopV2/assets/toaster_product-eacd2b96.png"
+                  />
+                </picture>
+                <div class="card-description">
+                  <ul class="raiting-list">
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                  <h3>Toaster</h3>
+                  <p>$224.99</p>
+                  <ul class="badges-list">
+                    <li>
+                      <div class=""><p>new</p></div>
+                    </li>
+                    <li>
+                      <div><p>-50%</p></div>
+                    </li>
+                  </ul>
+                  <button class="favourites" type="button">
+                    <svg width="20" height="20">
+                      <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <picture>
+                  <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                  <source
+                    media="(min-width: 1px)"
+                    srcset="/3legantShopV2/assets/white_drawer_unit-2a6039d6.png 1x, /3legantShopV2/assets/white_drawer_unit@2x-13557035.png 2x"
+                    type="image/png"
+                  />
+                  <img
+                    alt="toaster"
+                    src="/3legantShopV2/assets/white_drawer_unit-2a6039d6.png"
+                  />
+                </picture>
+                <div class="card-description">
+                  <ul class="raiting-list">
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="16" height="16">
+                        <use href="../public/symbol-defs.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                  <h3>White Drawer Unit</h3>
+                  <p>$89.99</p>
+                  <ul class="badges-list">
+                    <li>
+                      <div class=""><p>new</p></div>
+                    </li>
+                    <li>
+                      <div><p>-50%</p></div>
+                    </li>
+                  </ul>
+                  <button class="favourites" type="button">
+                    <svg width="20" height="20">
+                      <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="more-products-button"
+            type="button"
+            onclick="window.location.href='./html/shop.html'"
           >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
+            More Products
+            <svg class="arrow-right" width="16" height="16">
+              <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="values">
+        <div class="container">
+          <ul class="values-list">
+            <li>
+              <div class="values-card-container">
+                <svg class="values-svgs" width="48" height="48">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-delivery"></use>
+                </svg>
+                <h3>Free Shipping</h3>
+                <p>Order above $200</p>
+              </div>
+            </li>
+            <li>
+              <div class="values-card-container">
+                <svg class="values-svgs" width="48" height="48">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-money"></use>
+                </svg>
+                <h3>Money-back</h3>
+                <p>30 days guarantee</p>
+              </div>
+            </li>
+            <li>
+              <div class="values-card-container">
+                <svg class="values-svgs" width="48" height="48">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-lock"></use>
+                </svg>
+                <h3>Secure Payments</h3>
+                <p>Secured by Stripe</p>
+              </div>
+            </li>
+            <li>
+              <div class="values-card-container">
+                <svg class="values-svgs" width="48" height="48">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-call"></use>
+                </svg>
+                <h3>24/7 Support</h3>
+                <p>Phone and Email support</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="banner">
+        <picture>
+          <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+          <source
+            media="(min-width: 1024px)"
+            srcset="/3legantShopV2/assets/interior-6589b9e2.png 1x, /3legantShopV2/assets/interior@2x-168fedbd.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 1023px)"
+            srcset="/3legantShopV2/assets/interior-2fc8fc7c.png 1x, /3legantShopV2/assets/interior@2x-f4f6194c.png 2x"
+            type="image/png"
+          />
+          <img
+            class="banner-img"
+            alt="comfortable sofa"
+            src="/3legantShopV2/assets/interior-2fc8fc7c.png"
+          />
+        </picture>
+
+        <div class="banner-container">
+          <p class="sale">sale up to 35% off</p>
+          <h2><span>hundreds</span> of New lower prices!</h2>
+          <p class="banner-text">
+            It’s more affordable than ever to give every room in your home a
+            stylish makeover
+          </p>
+          <button
+            class="banner-button"
+            type="button"
+            onclick="window.location.href='./html/shop.html'"
           >
-        </li>
-      </ul>
-    </div>
+            Shop Now
+            <svg class="arrow-right" width="16" height="16">
+              <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="blog-section">
+        <div class="container">
+          <div class="blog-section-wrapper">
+            <h2>Articles</h2>
+            <button
+              class="banner-button"
+              type="button"
+              onclick="window.location.href='./html/shop.html'"
+            >
+              More Articles
+              <svg class="arrow-right" width="16" height="16">
+                <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="articles-list">
+            <li>
+              <picture>
+                <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                <source
+                  media="(min-width: 1px)"
+                  srcset="/3legantShopV2/assets/living_room-4071fae7.png 1x, /3legantShopV2/assets/living_room@2x-09ffbaed.png 2x"
+                  type="image/png"
+                />
+                <img
+                  alt="Living room"
+                  src="/3legantShopV2/assets/living_room-4071fae7.png"
+                />
+              </picture>
+              <h3>7 ways to decore your home</h3>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
-</section>
+              <button
+                class="banner-button"
+                type="button"
+                onclick="window.location.href='./html/shop.html'"
+              >
+                Read More
+                <svg class="arrow-right" width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <picture>
+                <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                <source
+                  media="(min-width: 1px)"
+                  srcset="/3legantShopV2/assets/chairs-5d85609e.png 1x, /3legantShopV2/assets/chairs@2x-a8d37e78.png 2x"
+                  type="image/png"
+                />
+                <img
+                  alt="Chairs in kitchen"
+                  src="/3legantShopV2/assets/chairs-5d85609e.png"
+                />
+              </picture>
+              <h3>Kitchen organization</h3>
 
+              <button
+                class="banner-button"
+                type="button"
+                onclick="window.location.href='./html/shop.html'"
+              >
+                Read More
+                <svg class="arrow-right" width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <picture>
+                <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                <source
+                  media="(min-width: 1px)"
+                  srcset="/3legantShopV2/assets/bad-14a37ac2.png 1x, /3legantShopV2/assets/bad@2x-2fe3e357.png 2x"
+                  type="image/png"
+                />
+                <img alt="Bad" src="/3legantShopV2/assets/bad-14a37ac2.png" />
+              </picture>
+              <h3>Decore your bedroom</h3>
+
+              <button
+                class="banner-button"
+                type="button"
+                onclick="window.location.href='./html/shop.html'"
+              >
+                Read More
+                <svg class="arrow-right" width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="content">
+        <h2>Join Our Newsletter</h2>
+        <p>Sign up for deals, new products and promotions</p>
+        <div class="input-wrapper">
+          <form>
+            <input type="text" placeholder="Email address" />
+            <svg width="24" height="21">
+              <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-email"></use>
+            </svg>
+            <button type="button">Signup</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-nav-container">
+          <div class="footer-logo-wrapper">
+            <a class="logo-footer" href="./index.html"
+              >3legant<span>.</span>
+            </a>
+            <div class="rectangle"></div>
+            <a class="gift" href="">Gift & Decoration Store</a>
+          </div>
+
+          <ul class="footer-list-nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-wrapper">
+          <ul class="privacy-list-desktop">
+            <li>
+              <p class="copyright">
+                Copyright © 2023 3legant. All rights reserved
+              </p>
+            </li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Use</a></li>
+          </ul>
+          <ul class="social-list-footer">
+            <li>
+              <button>
+                <svg width="24" height="24">
+                  <use
+                    href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-instagram-white"
+                  ></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button>
+                <svg width="24" height="24">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-facebook"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button>
+                <svg width="24" height="24">
+                  <use href="/3legantShopV2/assets/symbol-defs-31ebd4d8.svg#icon-youtube"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="privacy-wrapper">
+          <ul class="privacy-list">
+            <li>
+              <p class="copyright-text">
+                Copyright © 2023 3legant. All rights reserved
+              </p>
+            </li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Use</a></li>
+          </ul>
+          <p class="copyright-mobile">
+            Copyright © 2023 3legant. All rights reserved
+          </p>
+        </div>
+
+        <!-- </div> -->
+      </div>
+    </footer>
 
     
   </body>
