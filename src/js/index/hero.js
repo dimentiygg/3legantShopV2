@@ -42,7 +42,7 @@ const aboutMeSwiper = new Swiper('.swiper', {
     1024: {
       navigation: {
         nextEl: '.sbn',
-        prevEl: '.sbn',
+        prevEl: '.sbp',
       },
     },
   },
