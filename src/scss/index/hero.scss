@@ -119,5 +119,61 @@
   .hero-img {
     object-position: center;
   }
+  .swiper {
+    position: relative;
+  }
+
+  .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 32px;
+    z-index: 999;
+  }
+
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 32px;
+    z-index: 999;
+  }
+  .sbn {
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.04);
+    background: #fff;
+    border: none;
+
+    &:hover {
+      svg {
+        stroke: #121212;
+      }
+    }
+
+    svg {
+      stroke: #6c7275;
+    }
+  }
+  .sbp {
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.04);
+    background: #fff;
+    border: none;
+
+    &:hover {
+      svg {
+        stroke: #121212;
+      }
+    }
+
+    svg {
+      transform: scaleX(-1);
+      stroke: #6c7275;
+    }
+  }
 }
 // ================================/DESKTOP STYLES===========================================

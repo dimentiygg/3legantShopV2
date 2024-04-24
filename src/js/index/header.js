@@ -9,6 +9,7 @@ const closeAnnouncement = document.querySelector('.close-button');
 const announcement = document.querySelector('.announcement');
 const announcementBtn = document.querySelector('.header-button');
 const headerNavMenu = document.querySelector('.header-nav-menu');
+
 if (window.innerWidth < 768) {
   announcementBtn.style.display = 'none';
   headerNavMenu.style.display = 'none';

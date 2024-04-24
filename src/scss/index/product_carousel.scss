@@ -25,6 +25,13 @@
   }
   li {
     position: relative;
+
+    &:hover,
+    &:focus {
+      .add-to-cart {
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -49,6 +56,31 @@
     line-height: 157%;
     color: $neutral-07-100;
   }
+}
+
+.add-to-cart {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 250px;
+  left: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 8px 24px;
+  width: 202px;
+  height: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.04);
+  background: $neutral-07-100;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: $neutral-01-100;
+  border: none;
 }
 
 .badges-list {
@@ -178,6 +210,12 @@
       max-height: 349px;
       object-fit: cover;
     }
+  }
+  .add-to-cart {
+    width: 230px;
+    height: 46px;
+    border: none;
+    top: 285px;
   }
 }
 //=================================/TABLET SRYLES==================================================

@@ -70,5 +70,8 @@
 <symbol id="icon-user" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M24.745 26.065c-1.325-3.543-4.74-6.065-8.745-6.065s-7.421 2.522-8.745 6.065M24.745 26.065c2.811-2.445 4.588-6.047 4.588-10.065 0-7.364-5.97-13.333-13.333-13.333s-13.333 5.97-13.333 13.333c0 4.018 1.777 7.621 4.588 10.065M24.745 26.065c-2.341 2.036-5.399 3.268-8.745 3.268s-6.404-1.233-8.745-3.268M20 12c0 2.209-1.791 4-4 4s-4-1.791-4-4c0-2.209 1.791-4 4-4s4 1.791 4 4z"></path>
 </symbol>
+<symbol id="icon-chevron-right" viewBox="0 0 32 32">
+<path fill="none" stroke="#605f5f" style="stroke: var(--color1, #605f5f)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M12.225 8l8 8-8 8"></path>
+</symbol>
 </defs>
 </svg>

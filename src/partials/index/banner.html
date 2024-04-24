@@ -1,0 +1,49 @@
+<section class="banner">
+  <picture>
+    <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+    <source
+      media="(min-width: 1024px)"
+      srcset="
+        ./img/others/desktop/interior.png    1x,
+        ./img/others/desktop/interior@2x.png 2x
+      "
+      type="image/png"
+    />
+    <source
+      media="(max-width: 1023px)"
+      srcset="
+        ./img/others/mobile/interior.png    1x,
+        ./img/others/mobile/interior@2x.png 2x
+      "
+      type="image/png"
+    />
+    <img
+      class="banner-img"
+      alt="comfortable sofa"
+      src="./img/others/mobile/interior.png"
+    />
+  </picture>
+
+  <div class="banner-container">
+    <p class="sale">sale up to 35% off</p>
+    <h2><span>hundreds</span> of New lower prices!</h2>
+    <p class="banner-text">
+      It’s more affordable than ever to give every room in your home a stylish
+      makeover
+    </p>
+    <button
+      class="banner-button"
+      type="button"
+      onclick="window.location.href='./html/shop.html'"
+    >
+      Shop Now
+      <svg class="arrow-right" width="16" height="16">
+        <use href="./public/symbol-defs.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
+  </div>
+</section>

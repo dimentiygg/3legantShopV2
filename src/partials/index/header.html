@@ -1,1 +1,201 @@
-<header>sdf</header>
+<header>
+  <div class="announcement">
+    <svg width="17" height="16">
+      <use href="./public/symbol-defs.svg#icon-ticket"></use>
+    </svg>
+    <p>30% off storewide — Limited time!</p>
+    <button
+      class="header-button"
+      type="button"
+      onclick="window.location.href='./html/shop.html'"
+    >
+      Shop Now
+      <svg class="arrow-right" width="16" height="16">
+        <use href="./public/symbol-defs.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
+
+    <button class="close-button" type="button">
+      <svg width="11" height="10">
+        <use href="./public/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="container">
+    <nav>
+      <ul class="menu">
+        <li>
+          <button class="burger-button" type="button">
+            <svg class="burger-icon" width="12" height="10">
+              <use href="./public/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="logo" href="./index.html">3legant<span>.</span> </a>
+        </li>
+      </ul>
+      <ul class="header-nav-menu">
+        <li><a class="active" href="">Home</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+      <ul class="header-menu">
+        <li>
+          <button class="header-nav-button" type="button">
+            <svg class="header-nav-icon" width="22" height="20">
+              <use href="./public/symbol-defs.svg#icon-search"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="header-nav-button" type="button">
+            <svg class="header-nav-icon" width="22" height="22">
+              <use href="./public/symbol-defs.svg#icon-user"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="header-nav-button" type="button">
+            <svg class="header-nav-icon" width="22" height="22">
+              <use href="./public/symbol-defs.svg#icon-shopping-bag"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <div class="notification"><p>2</p></div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="backdrop hidden">
+    <div class="mobile-menu">
+      <div>
+        <a class="logo" href="./index.html">3legant<span>.</span></a>
+        <button class="mobile-close-button" type="button">
+          <svg width="16" height="16">
+            <use href="./public/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <svg class="search-icon" width="22" height="22">
+          <use href="./public/symbol-defs.svg#icon-search"></use>
+        </svg>
+        <input type="text" placeholder="search" />
+
+        <ul class="accordion-wrapper">
+          <li class="non-accordion-item">
+            <a href="">Home</a>
+          </li>
+          <li class="accordion ac">
+            <a class="accordion-link ac-link" href="">
+              Shop
+              <button
+                type="button"
+                class="accordion-button ac-trigger"
+                title="down"
+              >
+                <svg class="arrow">
+                  <use href="./public/symbol-defs.svg#icon-down"></use>
+                </svg>
+              </button>
+            </a>
+            <div class="accordion-panel ac-panel">
+              <p class="Something">Something</p>
+
+              <p class="Something">Something2</p>
+
+              <p class="Something">Something3</p>
+            </div>
+          </li>
+          <li class="accordion ac">
+            <a class="accordion-link ac-link" href="">
+              Product
+              <button
+                type="button"
+                class="accordion-button ac-trigger"
+                title="down"
+              >
+                <svg class="arrow">
+                  <use href="./public/symbol-defs.svg#icon-down"></use>
+                </svg>
+              </button>
+            </a>
+            <div class="accordion-panel ac-panel">
+              <p class="Something">Something4</p>
+
+              <p class="Something">Something5</p>
+
+              <p class="Something">Something5</p>
+            </div>
+          </li>
+          <li class="non-accordion-item">
+            <a href="">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-text" href="">Cart</a>
+            <ul class="notification-list">
+              <li>
+                <button class="shopping-bag-button" type="button">
+                  <svg class="shopping-bag-icon" width="22" height="22">
+                    <use
+                      href="./public/symbol-defs.svg#icon-shopping-bag"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <div class="notification"><p>2</p></div>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-text" href="">Wishlist</a>
+            <ul class="notification-list">
+              <li>
+                <button class="heart-button">
+                  <svg class="heart" width="22" height="19">
+                    <use href="./public/symbol-defs.svg#icon-heart"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <div class="notification"><p>2</p></div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <button class="sign-button" type="button">Sign In</button>
+        <ul class="social-list">
+          <li>
+            <button>
+              <svg width="24" height="24">
+                <use href="./public/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button>
+              <svg width="24" height="24">
+                <use href="./public/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button>
+              <svg width="24" height="24">
+                <use href="./public/symbol-defs.svg#icon-youtube"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
