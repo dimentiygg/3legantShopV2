@@ -4,7 +4,7 @@ const minutes = document.querySelector('[data-minutes]');
 const seconds = document.querySelector('[data-seconds]');
 
 const button = document.querySelector('.timer');
-console.log(days);
+
 function convertMs(ms) {
   // Number of milliseconds per unit of time
   const second = 1000;
@@ -64,9 +64,6 @@ const white = '../../img/products/mobile/white_tray_table_color@12x.png';
 
 let colorArr = [black, sand, red, white];
 
-// contentColor.textContent = color[2].dataset.color;
-// console.log(color[0].dataset.color);
-
 contentColorList.addEventListener('click', event => {
   contentColor.textContent = event.target.closest('li').dataset.color;
 
@@ -79,8 +76,6 @@ contentColorList.addEventListener('click', event => {
         item.classList.remove('content-active');
       }
 
-      console.log(contentListItems[i].dataset.color);
-
       contentListItems[i].classList.add('content-active');
 
       for (let img of images) {
@@ -90,5 +85,29 @@ contentColorList.addEventListener('click', event => {
         source3.srcset = colorArr[i];
       }
     }
+  }
+});
+
+const quantityList = document.querySelector('.quantity-list');
+const quantityText = document.querySelector('.quantity');
+let quantity = 1;
+
+console.log(quantityList.firstElementChild.getElementsByTagName('button')[0]);
+
+quantityList.addEventListener('click', event => {
+  if (event.target.closest('button').classList == 'plus-button') {
+    quantityText.textContent = quantity += 1;
+  } else {
+    quantityText.textContent = quantity -= 1;
+  }
+
+  if (quantityText.textContent == 0) {
+    quantityList.firstElementChild.getElementsByTagName(
+      'button'
+    )[0].disabled = true;
+  } else {
+    quantityList.firstElementChild.getElementsByTagName(
+      'button'
+    )[0].disabled = false;
   }
 });

@@ -1,0 +1,242 @@
+.accordion-container {
+  margin-bottom: 80px;
+}
+
+.ac-tabs-text {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 178%;
+  letter-spacing: -0.02em;
+  color: $neutral-04-100;
+}
+
+.ac-tabs-text-active {
+  color: $neutral-07-100 !important;
+}
+.accordion-link {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.tabs-accordion {
+  border-bottom: 1px solid $neutral-04-100;
+}
+
+.tabs-accordion-active {
+  border-bottom: 1px solid $neutral-07-100;
+}
+
+.arrow-active {
+  stroke: $neutral-07-100 !important;
+}
+
+.tabs-arrow {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.4s ease-out;
+  fill: none;
+  stroke: $neutral-04-100;
+}
+
+.review-title {
+  margin-top: 80px;
+  margin-bottom: 24px;
+  font-family: $second-family;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #23262f;
+}
+
+.raiting-list-tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  svg {
+    fill: $neutral-07-100;
+  }
+}
+
+.raiting-list-tabs .last-star {
+  fill: none;
+  stroke: $neutral-04-100;
+  stroke-width: 2px;
+}
+
+.raiting-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+
+  p {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 167%;
+    color: $neutral-07-100;
+  }
+}
+
+.tray-table {
+  margin-bottom: 32px;
+  margin-left: 146px;
+  margin-top: 8px;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 157%;
+  color: #23262f;
+}
+
+.tabs-form {
+  position: relative;
+}
+
+.review-input {
+  margin-bottom: 40px;
+  border: 2px solid $neutral-03-100;
+  border-radius: 16px;
+  padding: 16px 16px 16px 24px;
+  width: 100%;
+  min-width: 311px;
+  height: 64px;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: $neutral-04-100;
+}
+
+.tabs-form-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 999;
+  border-radius: 100px;
+  padding: 4px;
+  width: 32px;
+  height: 32px;
+  background: $neutral-07-100;
+  border: none;
+}
+
+.review-amount-title {
+  margin-bottom: 24px;
+  font-family: $second-family;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 121%;
+  letter-spacing: -0.02em;
+  color: $brand-color;
+}
+
+.tabs-select {
+  margin-bottom: 40px;
+  border: 2px solid $neutral-03-100;
+  border-radius: 8px;
+  padding: 8px 8px 8px 16px;
+  width: 311px;
+  height: 48px;
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 162%;
+  color: $neutral-07-100;
+
+  option {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 162%;
+    color: $neutral-07-100;
+  }
+}
+
+.reviews-list {
+  margin-bottom: 24px;
+  h2 {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    color: $neutral-07-100;
+  }
+}
+
+.reviews-list-item {
+  border-bottom: 1px solid $neutral-03-100;
+}
+
+.user {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.user-review-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buttons-wraper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 16px;
+
+  button {
+    background-color: transparent;
+    border: none;
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 167%;
+    color: #23262f;
+  }
+}
+
+.review-text {
+  margin-bottom: 16px;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: #353945;
+}
+
+.raiting-list-reviews {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.more-button {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid $neutral-07-100;
+  border-radius: 80px;
+  padding: 6px 40px;
+  width: 160px;
+  height: 40px;
+  background-color: transparent;
+  margin-bottom: 24px;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: $neutral-07-100;
+}

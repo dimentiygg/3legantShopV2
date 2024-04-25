@@ -1,4 +1,4 @@
-.content {
+.content-product {
   padding-top: 16px;
 }
 .content-reviews-wrapper {
@@ -165,7 +165,136 @@
   display: flex;
   flex-direction: row;
   gap: 8px;
+  margin-bottom: 24px;
 }
 .content-active {
   border: 1px solid black;
+}
+
+.content-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.quantity-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+  padding: 12px 8px;
+  width: 80px;
+  height: 32px;
+  background: #f5f5f5;
+}
+
+.quantity-list li:first-child {
+  svg {
+    stroke: #121212;
+  }
+}
+
+.quantity-list li:last-child {
+  svg {
+    fill: #121212;
+  }
+}
+
+.minus-button {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  border: none;
+  background-color: transparent;
+}
+
+.plus-button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  border: none;
+  background-color: transparent;
+}
+
+.wishlist-button {
+  position: relative;
+  border: 1px solid $neutral-07-100;
+  border-radius: 4px;
+  padding: 4px 40px;
+  width: 223px;
+  height: 32px;
+  background-color: transparent;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  color: neutral-07-100;
+}
+
+.wishlist-heart {
+  position: absolute;
+  top: 8px;
+  left: 60px;
+}
+
+.content-add-button {
+  margin-bottom: 24px;
+  border-radius: 4px;
+  padding: 4px 40px;
+  width: 311px;
+  height: 32px;
+  background: $neutral-07-100;
+  border: none;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  color: #fff;
+}
+
+.meta {
+  border-top: 1px solid $neutral-03-100;
+}
+.meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+
+  li {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.meta-list li:first-child {
+  margin-top: 24px;
+}
+
+.meta-list li:first-child .meta-loop {
+  margin-left: 98px;
+}
+
+.meta-list li:last-child .meta-loop {
+  margin-left: 58px;
+}
+.meta-text {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  color: $neutral-04-100;
+  text-transform: uppercase;
+}
+
+.meta-loop {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  color: $neutral-07-100;
 }
