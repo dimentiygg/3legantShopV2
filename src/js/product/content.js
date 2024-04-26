@@ -1,3 +1,42 @@
+import Swiper from 'swiper';
+import 'swiper/css';
+// import 'swiper/css/pagination';
+import {
+  Navigation,
+  Keyboard,
+  Mousewheel,
+  Autoplay,
+  Thumbs,
+} from 'swiper/modules';
+
+const swiperBtnNext = document.querySelector('.swiper-button-next');
+const swiperBtnPrev = document.querySelector('.swiper-button-prev');
+
+const SwiperProduct = new Swiper('.mySwiper', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 50,
+  freeMode: true,
+  watchSlidesProgress: true,
+  modules: [Navigation, Keyboard, Mousewheel, Autoplay, Thumbs],
+
+  //   autoplay: {
+  //     delay: 10000,
+  //   },
+  keyboard: {
+    enabled: true,
+  },
+  mousewheel: {
+    enabled: true,
+    forceToAxis: true,
+  },
+
+  navigation: {
+    nextEl: '.sbn',
+    prevEl: '.sbp',
+  },
+});
+
 const days = document.querySelector('[data-days]');
 const hours = document.querySelector('[data-hours]');
 const minutes = document.querySelector('[data-minutes]');
@@ -88,6 +127,41 @@ contentColorList.addEventListener('click', event => {
   }
 });
 
+const thumb1 = '../../img/products/mobile/black_tray_table_thumb1@2x.png';
+const thumb2 = '../../img/products/mobile/black_tray_table_thumb2@2x.png';
+const thumb3 = '../../img/products/mobile/black_tray_table_thumb3@2x.png';
+
+const thumbArr = [thumb1, thumb2, thumb3];
+
+const thumbList = document.querySelector('.thumb-list');
+
+thumbList.addEventListener('click', event => {
+  console.log(event.target.dataset.thumb);
+  if (event.target.dataset.thumb === 'thumb1') {
+    for (let img of images) {
+      img.src = thumb1;
+      source1.srcset = thumbArr[0];
+      source2.srcset = thumbArr[1];
+      source3.srcset = thumbArr[2];
+    }
+  } else if (event.target.dataset.thumb === 'thumb2') {
+    for (let img of images) {
+      img.src = thumb1;
+      source1.srcset = thumbArr[1];
+      source2.srcset = thumbArr[2];
+      source3.srcset = thumbArr[0];
+    }
+  } else {
+    for (let img of images) {
+      img.src = thumb1;
+      source1.srcset = thumbArr[2];
+      source2.srcset = thumbArr[0];
+      source3.srcset = thumbArr[1];
+    }
+  }
+});
+
+//
 const quantityList = document.querySelector('.quantity-list');
 const quantityText = document.querySelector('.quantity');
 let quantity = 1;
