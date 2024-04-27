@@ -9,12 +9,11 @@
   align-items: center;
   gap: 16px;
 
-  button {
+  a {
     display: flex;
     align-items: center;
     gap: 4px;
     padding: 0;
-    background-color: transparent;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -43,12 +42,11 @@
 .big-img-wrapper {
   position: relative;
 
-  button {
+  a {
     display: flex;
     align-items: center;
     gap: 4px;
     padding: 0;
-    background-color: transparent;
     border-top: none;
     border-right: none;
     border-left: none;

@@ -38,17 +38,17 @@ h2 {
 }
 
 .banner-text {
-  width: 311px;
+  max-width: 331px;
   margin-bottom: 24px;
   font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
   line-height: 162%;
   color: $neutral-07-100;
-  width: 400px;
 }
 
 .banner-button {
+  width: fit-content;
   display: flex;
   align-items: center;
   gap: 4px;
