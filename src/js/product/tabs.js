@@ -31,3 +31,31 @@ accordion.addEventListener('click', event => {
     }
   }
 });
+
+if (window.innerWidth >= 768) {
+  accordion.style.display = 'none';
+}
+
+const tabsList = document.querySelector('.tabs-list');
+const tabs = document.querySelectorAll('.tabs-list p');
+const review = document.querySelector('.review-container');
+const something = document.querySelector('.something');
+
+tabsList.addEventListener('click', event => {
+  if (event.target.tagName === 'P') {
+    for (let tab of tabs) {
+      tab.classList.remove('active-tab');
+    }
+    event.target.classList.add('active-tab');
+    if (
+      event.target.textContent === 'Questions' ||
+      event.target.textContent === 'Additional info'
+    ) {
+      review.style.display = 'none';
+      something.style.display = 'block';
+    } else {
+      review.style.display = 'block';
+      something.style.display = 'none';
+    }
+  }
+});
