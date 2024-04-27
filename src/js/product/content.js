@@ -96,10 +96,10 @@ const source3 = document.getElementById('mySource3');
 
 const images = document.querySelectorAll('.swiper-slide img');
 
-const black = './img/products/mobile/black_tray_table@2x.png';
-const red = './img/products/mobile/red_tray_table_color@12x.png';
-const sand = './img/products/mobile/sand_tray_table_color@12x.png';
-const white = './img/products/mobile/white_tray_table_color@12x.png';
+const black = '/img/products/mobile/black_tray_table@2x.png';
+const red = '/img/products/mobile/red_tray_table_color@12x.png';
+const sand = '/img/products/mobile/sand_tray_table_color@12x.png';
+const white = '/img/products/mobile/white_tray_table_color@12x.png';
 
 let colorArr = [black, sand, red, white];
 
