@@ -552,3 +552,20 @@
     height: 52px;
   }
 }
+
+@media (min-width: 1158px) {
+  .mySwiper {
+    max-width: 547px;
+
+    img {
+      width: 547px;
+      height: 728px;
+    }
+  }
+
+  .thumb-list {
+    img {
+      min-width: 174px;
+    }
+  }
+}

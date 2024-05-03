@@ -1,0 +1,47 @@
+<hero class="shop-hero">
+  <div class="container">
+    <div class="shop-hero-wrapper">
+      <picture>
+        <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/others/desktop/shop_page_hero_img.png    1x,
+            ./img/others/desktop/shop_page_hero_img@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/others/mobile/shop_page_hero_img.png    1x,
+            ./img/others/mobile/shop_page_hero_img@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="shop-hero-img"
+          alt="room"
+          src="./images/others/mobile/shop_page_hero_img.png"
+        />
+      </picture>
+      <ul class="shop-breadcrumbs-list">
+        <li>
+          <a href="./index.html"
+            >Home
+            <svg width="12" height="12">
+              <use href="./public/symbol-defs.svg#icon-chevron-right"></use>
+            </svg>
+          </a>
+        </li>
+        <li><a href="./shop.html" class="active">Shop</a></li>
+      </ul>
+      <h1>Shop Page</h1>
+      <p>Let’s design the place you always imagined.</p>
+    </div>
+  </div>
+</hero>

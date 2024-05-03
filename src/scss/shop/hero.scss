@@ -1,0 +1,78 @@
+.shop-hero-wrapper {
+  position: relative;
+
+  h1 {
+    position: absolute;
+    top: 118px;
+    left: 50%;
+    width: max-content;
+    transform: translateX(-50%);
+    font-family: $second-family;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    color: $brand-color;
+  }
+
+  p {
+    position: absolute;
+    bottom: 78px;
+    left: 50%;
+    min-width: 310px;
+    width: 100%;
+    transform: translateX(-50%);
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    color: #121212;
+  }
+}
+
+.shop-hero-img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 308px;
+}
+
+.shop-breadcrumbs-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  a {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    color: #605f5f;
+  }
+}
+
+.active {
+  color: #121212 !important;
+}
+
+.shop-breadcrumbs-list li:first-child a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+// =======================================================================TABLET STYLES====================================================================
+
+@media (min-width: 768px) {
+  .shop-hero-img {
+    height: 392px;
+  }
+}
+
+// =======================================================================/TABLET STYLES====================================================================

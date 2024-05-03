@@ -97,7 +97,9 @@
             />
             <button class="tabs-form-button" type="submit">
               <svg width="24" height="24">
-                <use href="./public/symbol-defs.svg#icon-star"></use>
+                <use
+                  href="./public/symbol-defs.svg#icon-arrow-right-feedback"
+                ></use>
               </svg>
             </button>
           </form>
@@ -503,12 +505,28 @@
         <p>11 Reviews</p>
       </div>
       <p class="tray-table">Tray Table</p>
-      <form class="tabs-form" action="">
+      <form class="tabs-form" action="" id="form">
         <input
+          id="emojiInput"
           class="review-input"
           type="text"
           placeholder="Share your thoughts"
         />
+
+        <script>
+          function insertEmoji(emoji) {
+            var input = document.getElementById('emojiInput');
+            input.value += emoji;
+          }
+        </script>
+        <div class="emoji-popup" id="emojiPanel">
+          <span class="emoji" onclick="insertEmoji('❤️')">❤️</span>
+          <span class="emoji" onclick="insertEmoji('🙌')">🙌</span>
+          <span class="emoji" onclick="insertEmoji('👍')">👍</span>
+          <span class="emoji" onclick="insertEmoji('😊')">😊</span>
+          <span class="emoji" onclick="insertEmoji('🤣')">🤣</span>
+          <span class="emoji" onclick="insertEmoji('😡')">😡</span>
+        </div>
         <button class="tabs-form-button" type="submit">Write Review</button>
       </form>
       <div class="tabs-select-wrapper">

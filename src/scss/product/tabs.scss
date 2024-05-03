@@ -319,3 +319,43 @@
     margin-left: 15%;
   }
 }
+
+// =============================================DESKTOP STYLES===================================================================
+@media (min-width: 1024px) {
+  .emoji-popup {
+    position: relative;
+    display: none;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -30px;
+    right: 126px;
+    border-radius: 32px;
+    width: 188px;
+    height: 44px;
+    box-shadow: 0 8px 16px -8px rgba(15, 15, 15, 0.2);
+    background: #fcfcfd;
+    z-index: 9999;
+
+    svg {
+      position: absolute;
+
+      fill: black;
+      stroke: #121212;
+    }
+  }
+
+  .emoji-popup::before {
+    position: absolute;
+    top: 43px;
+    right: 85px;
+    content: url('../../img/others/desktop/arrow_emoji.png');
+  }
+
+  .emoji {
+    cursor: pointer;
+  }
+}
+// =============================================/DESKTOP STYLES===================================================================
