@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    
+    <script type="module" crossorigin src="/3legantShopV2/commonHelpers6.js"></script>
+    <link rel="modulepreload" crossorigin href="/3legantShopV2/assets/vendor-8b93a0d9.js">
+    <link rel="modulepreload" crossorigin href="/3legantShopV2/assets/footer-175c440d.js">
+    <link rel="stylesheet" href="/3legantShopV2/assets/vendor-24abd9de.css">
+    <link rel="stylesheet" href="/3legantShopV2/assets/shop-28f1852b.css">
+  </head>
+  <body>
+    <header>
+  <div class="announcement">
+    <svg width="17" height="16">
+      <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-ticket"></use>
+    </svg>
+    <p>30% off storewide — Limited time!</p>
+    <a class="header-button" href="./html/shop.html">
+      Shop Now
+      <svg class="arrow-right" width="16" height="16">
+        <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-arrow-right"></use>
+      </svg>
+    </a>
+
+    <button class="close-button" type="button">
+      <svg width="11" height="10">
+        <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="container">
+    <nav>
+      <ul class="menu">
+        <li>
+          <button class="burger-button" type="button">
+            <svg class="burger-icon" width="12" height="10">
+              <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="logo" href="./index.html">3legant<span>.</span> </a>
+        </li>
+      </ul>
+      <ul class="header-nav-menu">
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./product.html">Product</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="header-menu">
+        <li>
+          <button class="header-nav-button" type="button">
+            <svg class="header-nav-icon" width="22" height="20">
+              <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-search"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="header-nav-button" type="button">
+            <svg class="header-nav-icon" width="22" height="22">
+              <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-user"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="header-nav-button" type="button">
+            <svg class="header-nav-icon" width="22" height="22">
+              <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-shopping-bag"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <div class="notification"><p>2</p></div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="backdrop hidden">
+    <div class="mobile-menu">
+      <div>
+        <a class="logo" href="./index.html">3legant<span>.</span></a>
+        <button class="mobile-close-button" type="button">
+          <svg width="16" height="16">
+            <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-close"></use>
+          </svg>
+        </button>
+        <svg class="search-icon" width="22" height="22">
+          <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-search"></use>
+        </svg>
+        <input type="text" placeholder="search" />
+
+        <ul class="accordion-wrapper">
+          <li class="non-accordion-item">
+            <a href="">Home</a>
+          </li>
+          <li class="accordion ac">
+            <a class="accordion-link ac-link" href="">
+              Shop
+              <button
+                type="button"
+                class="accordion-button ac-trigger"
+                title="down"
+              >
+                <svg class="arrow">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-down"></use>
+                </svg>
+              </button>
+            </a>
+            <div class="accordion-panel ac-panel">
+              <p class="Something">Something</p>
+
+              <p class="Something">Something2</p>
+
+              <p class="Something">Something3</p>
+            </div>
+          </li>
+          <li class="accordion ac">
+            <a class="accordion-link ac-link" href="">
+              Product
+              <button
+                type="button"
+                class="accordion-button ac-trigger"
+                title="down"
+              >
+                <svg class="arrow">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-down"></use>
+                </svg>
+              </button>
+            </a>
+            <div class="accordion-panel ac-panel">
+              <p class="Something">Something4</p>
+
+              <p class="Something">Something5</p>
+
+              <p class="Something">Something5</p>
+            </div>
+          </li>
+          <li class="non-accordion-item">
+            <a href="">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-text" href="">Cart</a>
+            <ul class="notification-list">
+              <li>
+                <button class="shopping-bag-button" type="button">
+                  <svg class="shopping-bag-icon" width="22" height="22">
+                    <use
+                      href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-shopping-bag"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <div class="notification"><p>2</p></div>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-text" href="">Wishlist</a>
+            <ul class="notification-list">
+              <li>
+                <button class="heart-button">
+                  <svg class="heart" width="22" height="19">
+                    <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-heart"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <div class="notification"><p>2</p></div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <button class="sign-button" type="button">Sign In</button>
+        <ul class="social-list">
+          <li>
+            <button>
+              <svg width="24" height="24">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-instagram"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button>
+              <svg width="24" height="24">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-facebook"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button>
+              <svg width="24" height="24">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-youtube"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <hero class="shop-hero">
+  <div class="container">
+    <div class="shop-hero-wrapper">
+      <picture>
+        <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+        <source
+          media="(min-width: 768px)"
+          srcset="/3legantShopV2/assets/shop_page_hero_img-035a6949.png 1x, /3legantShopV2/assets/shop_page_hero_img@2x-6e6af634.png 2x"
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/3legantShopV2/assets/shop_page_hero_img-6fccb99e.png 1x, /3legantShopV2/assets/shop_page_hero_img@2x-e4fafe5f.png 2x"
+          type="image/png"
+        />
+        <img
+          class="shop-hero-img"
+          alt="room"
+          src="./images/others/mobile/shop_page_hero_img.png"
+        />
+      </picture>
+      <ul class="shop-breadcrumbs-list">
+        <li>
+          <a href="./index.html"
+            >Home
+            <svg width="12" height="12">
+              <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-chevron-right"></use>
+            </svg>
+          </a>
+        </li>
+        <li><a href="./shop.html" class="active">Shop</a></li>
+      </ul>
+      <h1>Shop Page</h1>
+      <p>Let’s design the place you always imagined.</p>
+    </div>
+  </div>
+</hero>
+
+      <section class="shop-products">
+  <div class="container flex">
+    <div class="desktop-filters">
+      <button class="shop-filter-button">
+        <svg width="24" height="24">
+          <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-filter"></use>
+        </svg>
+        Filter
+      </button>
+      <h2 class="categories-title">categories</h2>
+      <ul class="shop-categories-list">
+        <li><button>All Rooms</button></li>
+        <li><button class="shop-filter-active-button">Living Room</button></li>
+        <li><button>Bedroom</button></li>
+        <li><button>Kitchen</button></li>
+        <li><button>Bathroom</button></li>
+        <li><button>Dinning</button></li>
+        <li><button>Outdoor</button></li>
+        <li><button>Something</button></li>
+        <li><button>Something</button></li>
+        <li><button>Something</button></li>
+      </ul>
+      <h2 class="categories-title">price</h2>
+
+      <ul class="shop-price-list">
+        <li>
+          <input
+            class="visually-hidden"
+            type="radio"
+            name="price"
+            id="all-price"
+            value="all"
+          />
+          <label for="all-price">
+            All Price
+            <span class="radio-button">
+              <svg class="own-checkbox" width="14" height="10">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-check"></use>
+              </svg>
+            </span>
+          </label>
+        </li>
+        <li>
+          <input
+            class="visually-hidden"
+            type="radio"
+            name="price"
+            id="0-99.99"
+            value="0-99.99"
+          />
+          <label for="0-99.99">
+            $0.00 - 99.99
+            <span class="radio-button">
+              <svg width="14" height="10">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-check"></use>
+              </svg>
+            </span>
+          </label>
+        </li>
+        <li>
+          <input
+            class="visually-hidden"
+            type="radio"
+            name="price"
+            id="100-199.99"
+            value="100-199.99"
+          />
+          <label for="100-199.99">
+            $100.00 - 199.99
+            <span class="radio-button">
+              <svg width="14" height="10">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-check"></use>
+              </svg> </span
+          ></label>
+        </li>
+        <li>
+          <input
+            class="visually-hidden"
+            type="radio"
+            name="price"
+            id="200-299.99"
+            value="200-299.99"
+          />
+          <label for="200-299.99">
+            $200.00 - 299.99
+            <span class="radio-button">
+              <svg width="14" height="10">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-check"></use>
+              </svg> </span
+          ></label>
+        </li>
+        <li>
+          <input
+            class="visually-hidden"
+            type="radio"
+            name="price"
+            id="300-399.99"
+            value="300-399.99"
+          />
+          <label for="300-399.99">
+            $300.00 - 399.99
+            <span class="radio-button">
+              <svg width="14" height="10">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-check"></use>
+              </svg> </span
+          ></label>
+        </li>
+        <li>
+          <input
+            class="visually-hidden"
+            type="radio"
+            name="price"
+            id="400+"
+            value="400+"
+          />
+          <label for="400+">
+            $400.00+
+            <span class="radio-button">
+              <svg width="14" height="10">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-check"></use>
+              </svg> </span
+          ></label>
+        </li>
+      </ul>
+    </div>
+    <div class="all-filters-wrapper">
+      <div class="shop-filter">
+        <button class="shop-filter-button">
+          <svg width="24" height="24">
+            <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-filter"></use>
+          </svg>
+          Filter
+        </button>
+        <ul class="shop-filter-list">
+          <li>
+            <button class="active-filter-button" id="vertical">
+              <svg width="18" height="18">
+                <use
+                  href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-filter-two-vertical"
+                ></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button id="horizontal">
+              <svg width="18" height="19">
+                <use
+                  href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-filter-two-horizontal"
+                ></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="filters-wrapper">
+        <div class="shop-sort-wrapper">
+          <p>Living Room</p>
+          <select class="shop-select" name="Sort by" id="">
+            <option value="" disabled selected hidden>Sort by</option>
+            <option value="">Price</option>
+            <option value="">Popularity</option>
+            <option value="">Raiting</option>
+          </select>
+        </div>
+        <ul class="full-shop-filter-list">
+          <li>
+            <button class="active-filter-button" id="nine">
+              <svg width="18" height="18">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-filter-nine"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button id="four">
+              <svg width="18" height="19">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-filter-four"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button id="vertical-desk">
+              <svg width="18" height="18">
+                <use
+                  href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-filter-two-vertical"
+                ></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button id="horizontal-desk">
+              <svg width="18" height="19">
+                <use
+                  href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-filter-two-horizontal"
+                ></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!--  -->
+      <ul class="shop-products-list nine-style">
+        <li class="shop-products-list-item">
+          <a href="./product.html">
+            <div class="shop-image-wrapper">
+              <picture>
+                <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+                <source
+                  media="(min-width: 1px)"
+                  srcset="/3legantShopV2/assets/black_tray_table_mobile-1e8459ea.png 1x, /3legantShopV2/assets/black_tray_table_mobile@2x-c84e81a2.png 2x"
+                  type="image/png"
+                />
+                <img
+                  alt="Black tray table"
+                  src="./img/products/mobile/black_tray_table_mobile"
+                />
+              </picture>
+              <button class="add-to-cart" type="button">Add to cart</button>
+            </div>
+          </a>
+
+          <div class="card-description">
+            <ul class="raiting-list">
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Black Tray table</h3>
+            <p>$19.99</p>
+
+            <ul class="badges-list">
+              <li>
+                <div><p>new</p></div>
+              </li>
+              <li>
+                <div><p>-50%</p></div>
+              </li>
+            </ul>
+            <button class="favourites" type="button">
+              <svg width="20" height="20">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-heart"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li class="shop-products-list-item">
+          <div class="shop-image-wrapper">
+            <picture>
+              <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+              <source
+                media="(min-width: 1px)"
+                srcset="/3legantShopV2/assets/illuminator-eb4fe204.png 1x, /3legantShopV2/assets/illuminator@2x-182d162b.png 2x"
+                type="image/png"
+              />
+              <img
+                alt="Black tray table"
+                src="/3legantShopV2/assets/illuminator-eb4fe204.png"
+              />
+            </picture>
+            <button class="add-to-cart" type="button">Add to cart</button>
+          </div>
+
+          <div class="card-description">
+            <ul class="raiting-list">
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Lamp</h3>
+            <p>$39.00</p>
+            <ul class="badges-list">
+              <li>
+                <div><p>new</p></div>
+              </li>
+              <li>
+                <div><p>-50%</p></div>
+              </li>
+            </ul>
+            <button class="favourites" type="button">
+              <svg width="20" height="20">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-heart"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li class="shop-products-list-item">
+          <div class="shop-image-wrapper">
+            <picture>
+              <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+              <source
+                media="(min-width: 1px)"
+                srcset="/3legantShopV2/assets/loveseat_sofa-6c151dbd.png 1x, /3legantShopV2/assets/loveseat_sofa@2x-f0b9535d.png 2x"
+                type="image/png"
+              />
+              <img
+                alt="Loveseat sofa"
+                src="/3legantShopV2/assets/loveseat_sofa-6c151dbd.png"
+              />
+            </picture>
+            <button class="add-to-cart" type="button">Add to cart</button>
+          </div>
+
+          <div class="card-description">
+            <ul class="raiting-list">
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Loveseat Sofa</h3>
+            <ul class="price-list">
+              <li><p>$199.00</p></li>
+              <li class="disabled-price"><p>$400.00</p></li>
+            </ul>
+
+            <ul class="badges-list">
+              <li>
+                <div class=""><p>new</p></div>
+              </li>
+              <li>
+                <div><p>-50%</p></div>
+              </li>
+            </ul>
+            <button class="favourites" type="button">
+              <svg width="20" height="20">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-heart"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li class="shop-products-list-item">
+          <div class="shop-image-wrapper">
+            <picture>
+              <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+              <source
+                media="(min-width: 1px)"
+                srcset="/3legantShopV2/assets/table_lamp_diff-162731c0.png 1x, /3legantShopV2/assets/table_lamp_diff@2x-fa681202.png 2x"
+                type="image/png"
+              />
+              <img
+                alt="Table lamp"
+                src="/3legantShopV2/assets/table_lamp_diff-162731c0.png"
+              />
+            </picture>
+            <button class="add-to-cart" type="button">Add to cart</button>
+          </div>
+
+          <div class="card-description">
+            <ul class="raiting-list">
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Table Lamp</h3>
+            <p>$24.99</p>
+            <ul class="badges-list">
+              <li>
+                <div class=""><p>new</p></div>
+              </li>
+              <li>
+                <div><p>-50%</p></div>
+              </li>
+            </ul>
+            <button class="favourites" type="button">
+              <svg width="20" height="20">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-heart"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li class="shop-products-list-item">
+          <div class="shop-image-wrapper">
+            <picture>
+              <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+              <source
+                media="(min-width: 1px)"
+                srcset="/3legantShopV2/assets/table_lamp-c1d5b865.png 1x, /3legantShopV2/assets/table_lamp@2x-75ca22e9.png 2x"
+                type="image/png"
+              />
+              <img
+                alt="Beige table lamp"
+                src="/3legantShopV2/assets/table_lamp-c1d5b865.png"
+              />
+            </picture>
+            <button class="add-to-cart" type="button">Add to cart</button>
+          </div>
+
+          <div class="card-description">
+            <ul class="raiting-list">
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Beige Table Lamp</h3>
+            <p>$24.99</p>
+            <ul class="badges-list">
+              <li>
+                <div class=""><p>new</p></div>
+              </li>
+              <li>
+                <div><p>-50%</p></div>
+              </li>
+            </ul>
+            <button class="favourites" type="button">
+              <svg width="20" height="20">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-heart"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li class="shop-products-list-item">
+          <div class="shop-image-wrapper">
+            <picture>
+              <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+              <source
+                media="(min-width: 1px)"
+                srcset="/3legantShopV2/assets/light_beige_pillow-bd58ef4a.png 1x, /3legantShopV2/assets/light_beige_pillow@2x-b2d3736c.png 2x"
+                type="image/png"
+              />
+              <img
+                alt="Light Beige Pilow"
+                src="/3legantShopV2/assets/light_beige_pillow-bd58ef4a.png"
+              />
+            </picture>
+            <button class="add-to-cart" type="button">Add to cart</button>
+          </div>
+
+          <div class="card-description">
+            <ul class="raiting-list">
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Bamboo basket</h3>
+            <p>$24.99</p>
+            <ul class="badges-list">
+              <li>
+                <div class=""><p>new</p></div>
+              </li>
+              <li>
+                <div><p>-50%</p></div>
+              </li>
+            </ul>
+            <button class="favourites" type="button">
+              <svg width="20" height="20">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-heart"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li class="shop-products-list-item">
+          <div class="shop-image-wrapper">
+            <picture>
+              <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+              <source
+                media="(min-width: 1px)"
+                srcset="/3legantShopV2/assets/luxury_sofa-dbcf875b.png 1x, /3legantShopV2/assets/luxury_sofa@2x-64c6f32d.png 2x"
+                type="image/png"
+              />
+              <img
+                alt="luxury sofa"
+                src="/3legantShopV2/assets/luxury_sofa-dbcf875b.png"
+              />
+            </picture>
+            <button class="add-to-cart" type="button">Add to cart</button>
+          </div>
+
+          <div class="card-description">
+            <ul class="raiting-list">
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Luxury Sofa</h3>
+            <p>$224.99</p>
+            <ul class="badges-list">
+              <li>
+                <div class=""><p>new</p></div>
+              </li>
+              <li>
+                <div><p>-50%</p></div>
+              </li>
+            </ul>
+            <button class="favourites" type="button">
+              <svg width="20" height="20">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-heart"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li class="shop-products-list-item">
+          <div class="shop-image-wrapper">
+            <picture>
+              <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+              <source
+                media="(min-width: 1px)"
+                srcset="/3legantShopV2/assets/white_drawer_unit-2a6039d6.png 1x, /3legantShopV2/assets/white_drawer_unit@2x-13557035.png 2x"
+                type="image/png"
+              />
+              <img
+                alt="toaster"
+                src="/3legantShopV2/assets/white_drawer_unit-2a6039d6.png"
+              />
+            </picture>
+            <button class="add-to-cart" type="button">Add to cart</button>
+          </div>
+
+          <div class="card-description">
+            <ul class="raiting-list">
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>White Drawer Unit</h3>
+            <p>$89.99</p>
+            <ul class="badges-list">
+              <li>
+                <div class=""><p>new</p></div>
+              </li>
+              <li>
+                <div><p>-50%</p></div>
+              </li>
+            </ul>
+            <button class="favourites" type="button">
+              <svg width="20" height="20">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-heart"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li class="shop-products-list-item">
+          <div class="shop-image-wrapper">
+            <picture>
+              <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+              <source
+                media="(min-width: 1px)"
+                srcset="/3legantShopV2/assets/bamboo_basket-6cb201de.png 1x, /3legantShopV2/assets/bamboo_basket@2x-85f2e2aa.png 2x"
+                type="image/png"
+              />
+              <img
+                alt="Bamboo basket"
+                src="/3legantShopV2/assets/bamboo_basket-6cb201de.png"
+              />
+            </picture>
+            <button class="add-to-cart" type="button">Add to cart</button>
+          </div>
+
+          <div class="card-description">
+            <ul class="raiting-list">
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="16" height="16">
+                  <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Bamboo basket</h3>
+            <p>$24.99</p>
+            <ul class="badges-list">
+              <li>
+                <div class=""><p>new</p></div>
+              </li>
+              <li>
+                <div><p>-50%</p></div>
+              </li>
+            </ul>
+            <button class="favourites" type="button">
+              <svg width="20" height="20">
+                <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-heart"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <button class="shop-more-button">Show more</button>
+    </div>
+  </div>
+</section>
+
+      <section class="content">
+  <h2>Join Our Newsletter</h2>
+  <p>Sign up for deals, new products and promotions</p>
+  <div class="input-wrapper">
+    <form>
+      <input type="text" placeholder="Email address" />
+      <svg width="24" height="21">
+        <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-email"></use>
+      </svg>
+      <button type="button">Signup</button>
+    </form>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-nav-container">
+      <div class="footer-logo-wrapper">
+        <a class="logo-footer" href="./index.html">3legant<span>.</span> </a>
+        <div class="rectangle"></div>
+        <a class="gift" href="">Gift & Decoration Store</a>
+      </div>
+
+      <ul class="footer-list-nav">
+        <li><a href="">Home</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-wrapper">
+      <ul class="privacy-list-desktop">
+        <li>
+          <p class="copyright">Copyright © 2023 3legant. All rights reserved</p>
+        </li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Terms of Use</a></li>
+      </ul>
+      <ul class="social-list-footer">
+        <li>
+          <button>
+            <svg width="24" height="24">
+              <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-instagram-white"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button>
+            <svg width="24" height="24">
+              <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-facebook"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button>
+            <svg width="24" height="24">
+              <use href="/3legantShopV2/assets/symbol-defs-3e666237.svg#icon-youtube"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="privacy-wrapper">
+      <ul class="privacy-list">
+        <li>
+          <p class="copyright-text">
+            Copyright © 2023 3legant. All rights reserved
+          </p>
+        </li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Terms of Use</a></li>
+      </ul>
+      <p class="copyright-mobile">
+        Copyright © 2023 3legant. All rights reserved
+      </p>
+    </div>
+
+    <!-- </div> -->
+  </div>
+</footer>
+
+    
+  </body>
+</html>
