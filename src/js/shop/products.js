@@ -54,6 +54,7 @@ fullShopFilterList.addEventListener('click', e => {
     horizontalDeskBtn.classList.remove('active-filter-button');
     verticalDeskBtn.classList.remove('active-filter-button');
   } else {
+    productslist.classList.remove('horizontal-style');
     nineBtn.classList.add('active-filter-button');
     horizontalDeskBtn.classList.remove('active-filter-button');
     verticalDeskBtn.classList.remove('active-filter-button');
