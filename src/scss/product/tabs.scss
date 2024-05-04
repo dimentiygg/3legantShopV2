@@ -3,6 +3,8 @@
 }
 
 .ac-tabs-text {
+  padding-top: 3px;
+  padding-bottom: 3px;
   font-family: $font-family;
   font-weight: 500;
   font-size: 18px;
@@ -13,10 +15,6 @@
 
 .ac-tabs-text-active {
   color: $neutral-07-100 !important;
-}
-.accordion-link {
-  padding-top: 3px;
-  padding-bottom: 3px;
 }
 
 .tabs-accordion {

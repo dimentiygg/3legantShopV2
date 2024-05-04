@@ -25,11 +25,9 @@ const nineBtn = document.getElementById('nine');
 const fourBtn = document.getElementById('four');
 const verticalDeskBtn = document.getElementById('vertical-desk');
 const horizontalDeskBtn = document.getElementById('horizontal-desk');
-console.log(verticalDeskBtn);
 
 fullShopFilterList.addEventListener('click', e => {
   if (e.target.closest('button') == verticalDeskBtn) {
-    console.log(horizontalBtn);
     productslist.classList.remove('nine-style');
 
     nineBtn.classList.remove('active-filter-button');
@@ -60,5 +58,25 @@ fullShopFilterList.addEventListener('click', e => {
     verticalDeskBtn.classList.remove('active-filter-button');
     fourBtn.classList.remove('active-filter-button');
     productslist.classList.add('nine-style');
+  }
+});
+
+const filterBtn = document.querySelector('.mobile-filter-button');
+const filters = document.querySelector('.desktop-filters');
+
+filterBtn.addEventListener('click', e => {
+  filters.classList.remove('desktop-filters-close');
+  filters.classList.add('desktop-filters-open');
+  document.querySelector('.shop-filter-button').style.display = 'none';
+});
+
+window.addEventListener('click', e => {
+  if (
+    filters.classList.contains('desktop-filters-open') &&
+    !filters.contains(e.target) &&
+    e.target.closest('button') !== filterBtn
+  ) {
+    filters.classList.add('desktop-filters-close');
+    document.querySelector('.shop-filter-button').style.display = 'block';
   }
 });

@@ -1,0 +1,47 @@
+<hero class="blog-hero">
+  <div class="container">
+    <div class="blog-hero-wrapper">
+      <picture>
+        <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/others/desktop/blog_hero_desktop_img.png 1x,
+            ./img/others/desktop/blog_hero_desktop_img.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            .img/others/mobile/blog_hero_img.png     1x,
+            ./img/others/mobile/blog_hero_img@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="blog-hero-img"
+          alt="background"
+          src="./img/others/mobile/blog_hero_img.png"
+        />
+      </picture>
+      <ul class="blog-breadcrumbs-list">
+        <li>
+          <a href="./index.html"
+            >Home
+            <svg width="12" height="12">
+              <use href="./public/symbol-defs.svg#icon-chevron-right"></use>
+            </svg>
+          </a>
+        </li>
+        <li><a href="./blog.html" class="active">Blog</a></li>
+      </ul>
+      <h1>Blog Page</h1>
+      <p>Home ideas and design inspiration</p>
+    </div>
+  </div>
+</hero>
