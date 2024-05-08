@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog post</title>
+    
+    <script type="module" crossorigin src="/3legantShopV2/assets/vendor-32767f66.js"></script>
+    <script type="module" crossorigin src="/3legantShopV2/assets/footer-da5d75d8.js"></script>
+    <script type="module" crossorigin src="/3legantShopV2/assets/blog-0786ab5f.js"></script>
+    <link rel="stylesheet" href="/3legantShopV2/assets/vendor-24abd9de.css">
+    <link rel="stylesheet" href="/3legantShopV2/assets/blog_post-2817e448.css">
+  </head>
+  <body>
+    <header>
+  <div class="announcement">
+    <svg width="17" height="16">
+      <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-ticket"></use>
+    </svg>
+    <p>30% off storewide — Limited time!</p>
+    <a class="header-button" href="./shop.html">
+      Shop Now
+      <svg class="arrow-right" width="16" height="16">
+        <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-arrow-right"></use>
+      </svg>
+    </a>
+
+    <button class="close-button" type="button">
+      <svg width="11" height="10">
+        <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="container">
+    <nav>
+      <ul class="menu">
+        <li>
+          <button class="burger-button" type="button">
+            <svg class="burger-icon" width="12" height="10">
+              <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="logo" href="./index.html">3legant<span>.</span> </a>
+        </li>
+      </ul>
+      <ul class="header-nav-menu">
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./product.html">Product</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="header-menu">
+        <li>
+          <button class="header-nav-button" type="button">
+            <svg class="header-nav-icon" width="22" height="20">
+              <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-search"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="header-nav-button" type="button">
+            <svg class="header-nav-icon" width="22" height="22">
+              <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-user"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="header-nav-button" type="button">
+            <svg class="header-nav-icon" width="22" height="22">
+              <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-shopping-bag"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <div class="notification"><p>2</p></div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="backdrop hidden">
+    <div class="mobile-menu">
+      <div>
+        <a class="logo" href="./index.html">3legant<span>.</span></a>
+        <button class="mobile-close-button" type="button">
+          <svg width="16" height="16">
+            <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-close"></use>
+          </svg>
+        </button>
+        <svg class="search-icon" width="22" height="22">
+          <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-search"></use>
+        </svg>
+        <input type="text" placeholder="search" />
+
+        <ul class="accordion-wrapper">
+          <li class="non-accordion-item">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="accordion ac">
+            <a class="accordion-link ac-link" href="./shop.html">
+              Shop
+              <button
+                type="button"
+                class="accordion-button ac-trigger"
+                title="down"
+              >
+                <svg class="arrow">
+                  <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-down"></use>
+                </svg>
+              </button>
+            </a>
+            <div class="accordion-panel ac-panel">
+              <p class="Something">Something</p>
+
+              <p class="Something">Something2</p>
+
+              <p class="Something">Something3</p>
+            </div>
+          </li>
+          <li class="accordion ac">
+            <a class="accordion-link ac-link" href="./product.html">
+              Product
+              <button
+                type="button"
+                class="accordion-button ac-trigger"
+                title="down"
+              >
+                <svg class="arrow">
+                  <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-down"></use>
+                </svg>
+              </button>
+            </a>
+            <div class="accordion-panel ac-panel">
+              <p class="Something">Something4</p>
+
+              <p class="Something">Something5</p>
+
+              <p class="Something">Something5</p>
+            </div>
+          </li>
+          <li class="non-accordion-item">
+            <a href="./contact.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-text" href="">Cart</a>
+            <ul class="notification-list">
+              <li>
+                <button class="shopping-bag-button" type="button">
+                  <svg class="shopping-bag-icon" width="22" height="22">
+                    <use
+                      href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-shopping-bag"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <div class="notification"><p>2</p></div>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-text" href="">Wishlist</a>
+            <ul class="notification-list">
+              <li>
+                <button class="heart-button">
+                  <svg class="heart" width="22" height="19">
+                    <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-heart"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <div class="notification"><p>2</p></div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <button class="sign-button" type="button">Sign In</button>
+        <ul class="social-list">
+          <li>
+            <button>
+              <svg width="24" height="24">
+                <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-instagram"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button>
+              <svg width="24" height="24">
+                <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-facebook"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button>
+              <svg width="24" height="24">
+                <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-youtube"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <hero class="blog-post-hero">
+  <div class="container">
+    <ul class="post-breadcrumbs-list">
+      <li>
+        <a class="post-back" href="./blog.html">
+          <svg width="12" height="12">
+            <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-chevron-right"></use>
+          </svg>
+          back</a
+        >
+      </li>
+      <li>
+        <a href="./index.html">
+          Home
+          <svg width="12" height="12">
+            <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-chevron-right"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="./blog.html"
+          >Blog
+          <svg width="12" height="12">
+            <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-chevron-right"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="post-active" href="./blog_post.html">
+          How to make a busy bathroom a place to relax</a
+        >
+      </li>
+    </ul>
+
+    <p class="post-article">article</p>
+    <h1>How to make a busy bathroom a place to relax</h1>
+    <ul class="post-author">
+      <li>
+        <svg width="16" height="16">
+          <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-user"></use>
+        </svg>
+        <p>Henrik Annermak</p>
+      </li>
+      <li>
+        <svg width="16" height="16">
+          <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-calendar"></use>
+        </svg>
+        <p>October 16, 2023</p>
+      </li>
+    </ul>
+  </div>
+</hero>
+
+      <section class="post-content">
+  <div class="container">
+    <ul class="post-content-list">
+      <li>
+        <img src="" alt="" />
+        <picture>
+          <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+          <source
+            media="(min-width: 768px)"
+            srcset="/3legantShopV2/assets/busy_bathroom_desktop-c801c566.png 1x, /3legantShopV2/assets/busy_bathroom_desktop@2x-c7d7f009.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/3legantShopV2/assets/busy_bathroom_mobile-c4e9ccbd.png 1x, /3legantShopV2/assets/busy_bathroom_mobile@2x-1cf8f1c6.png 2x"
+            type="image/png"
+          />
+          <img
+            alt="bathroom
+          "
+            src="/3legantShopV2/assets/busy_bathroom_mobile-c4e9ccbd.png"
+          />
+        </picture>
+        <p>
+          Your bathroom serves a string of busy functions on a daily basis. See
+          how you can make all of them work, and still have room for comfort and
+          relaxation. <span>A cleaning hub with built-in ventilation</span> Use
+          a rod and a shower curtain to create a complement to your cleaning
+          cupboard. Unsightly equipment is stored out of sight yet accessibly
+          close – while the air flow helps dry any dampness.
+        </p>
+      </li>
+      <li class="mobile-content-item">
+        <picture>
+          <source
+            media="(min-width:1px)"
+            srcset="/3legantShopV2/assets/cleaning_hub-b105407f.png 1x, /3legantShopV2/assets/cleaning_hub@2x-892a0ae5.png 2x"
+            type="image/png"
+          />
+          <img
+            alt="bathroom
+          "
+            src="/3legantShopV2/assets/cleaning_hub-b105407f.png"
+          />
+        </picture>
+        <p>
+          <span>Storage with a calming effect</span> Having a lot to store
+          doesn’t mean it all has to go in a cupboard. Many bathroom items are
+          better kept out in the open – either to be close at hand or are nice
+          to look at. Add a plant or two to set a calm mood for the entire room
+          (and they’ll thrive in the humid air).
+        </p>
+      </li>
+      <li class="mobile-content-item">
+        <picture>
+          <source
+            media="(min-width:1px)"
+            srcset="/3legantShopV2/assets/calming_storage-848ebe2e.png 1x, /3legantShopV2/assets/calming_storage@2x-72125fb9.png 2x"
+            type="image/png"
+          />
+          <img
+            alt="bathroom
+          "
+            src="/3legantShopV2/assets/calming_storage-848ebe2e.png"
+          />
+        </picture>
+        <p>
+          <span>Kit your clutter for easy access</span> Even if you have a
+          cabinet ready to swallow the clutter, it’s worth resisting a little.
+          Let containers hold kits for different activities – home spa, make-up,
+          personal hygiene – to bring out or put back at a moment’s notice.
+        </p>
+      </li>
+      <li class="desktop-content-item">
+        <div>
+          <picture>
+            <source
+              media="(min-width:1px)"
+              srcset="/3legantShopV2/assets/cleaning_hub-b105407f.png 1x, /3legantShopV2/assets/cleaning_hub@2x-892a0ae5.png 2x"
+              type="image/png"
+            />
+            <img
+              alt="bathroom
+          "
+              src="/3legantShopV2/assets/cleaning_hub-b105407f.png"
+            />
+          </picture>
+          <picture>
+            <source
+              media="(min-width:1px)"
+              srcset="/3legantShopV2/assets/calming_storage-848ebe2e.png 1x, /3legantShopV2/assets/calming_storage@2x-72125fb9.png 2x"
+              type="image/png"
+            />
+            <img
+              alt="bathroom
+          "
+              src="/3legantShopV2/assets/calming_storage-848ebe2e.png"
+            />
+          </picture>
+        </div>
+        <p>
+          <span>Storage with a calming effect</span> Having a lot to store
+          doesn’t mean it all has to go in a cupboard. Many bathroom items are
+          better kept out in the open – either to be close at hand or are nice
+          to look at. Add a plant or two to set a calm mood for the entire room
+          (and they’ll thrive in the humid air).
+        </p>
+        <p>
+          <span>Kit your clutter for easy access</span> Even if you have a
+          cabinet ready to swallow the clutter, it’s worth resisting a little.
+          Let containers hold kits for different activities – home spa, make-up,
+          personal hygiene – to bring out or put back at a moment’s notice.
+        </p>
+      </li>
+      <li>
+        <picture>
+          <source
+            media="(min-width:1px)"
+            srcset="/3legantShopV2/assets/clutter-1f5f82a8.png 1x, /3legantShopV2/assets/clutter@2x-4504c126.png 2x"
+            type="image/png"
+          />
+          <img
+            alt="bathroom
+          "
+            src="/3legantShopV2/assets/clutter-1f5f82a8.png"
+          />
+        </picture>
+        <p>
+          <span>An ecosystem of towels </span>
+          Racks or hooks that allow air to circulate around each towel prolong
+          their freshness. They dry quick and the need for frequent washing is
+          minimized.
+          <span>Make your mop disappear</span>
+          heroHaving your cleaning tools organized makes them easier to both use
+          and return to. When they’re not needed, close the curtain and feel the
+          peace of mind it brings.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="related-post">
+  <div class="container">
+    <div class="post-wrapper">
+      <p class="may-like">You might also like</p>
+      <a class="post-more-button" href="./blog.html">
+        More articles
+        <svg class="arrow-right" width="16" height="16">
+          <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-arrow-right"></use>
+        </svg>
+      </a>
+    </div>
+
+    <ul class="related-post-list">
+      <li class="related-post-item">
+        <picture>
+          <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+          <source
+            media="(min-width: 1px)"
+            srcset="/3legantShopV2/assets/modern_texas-home_yellow_sofa-2932d0c2.png 1x, /3legantShopV2/assets/modern_texas-home_yellow_sofa@2x-22396438.png 2x"
+            type="image/png"
+          />
+          <img
+            class="blog-articles-img"
+            alt="living room with yellow sofa"
+            src="/3legantShopV2/assets/modern_texas-home_yellow_sofa-2932d0c2.png"
+          />
+        </picture>
+        <div class="post-description">
+          <ul class="post-description-list">
+            <li>
+              <p>Modern texas home is beautiful and completely kid-friendly</p>
+            </li>
+            <li>
+              <p>October 16, 2023</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="related-post-item">
+        <picture>
+          <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+          <source
+            media="(min-width: 1px)"
+            srcset="/3legantShopV2/assets/modern_texas-home_big_living-c0a20763.png 1x, /3legantShopV2/assets/modern_texas-home_big_living@2x-457b796f.png 2x"
+            type="image/png"
+          />
+          <img
+            class="blog-articles-img"
+            alt="living room with grey sofa"
+            src="/3legantShopV2/assets/modern_texas-home_big_living-c0a20763.png"
+          />
+        </picture>
+        <div class="post-description">
+          <ul class="post-description-list">
+            <li>
+              <p>Modern texas home is beautiful and completely kid-friendly</p>
+            </li>
+            <li>
+              <p>October 16, 2023</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="related-post-item">
+        <picture>
+          <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+          <source
+            media="(min-width: 1px)"
+            srcset="/3legantShopV2/assets/modern_texas-home_bad-d5b419b8.png 1x, /3legantShopV2/assets/modern_texas-home_bad@2x-79eab99f.png 2x"
+            type="image/png"
+          />
+          <img
+            class="blog-articles-img"
+            alt="bedroom"
+            src="/3legantShopV2/assets/modern_texas-home_bad-d5b419b8.png"
+          />
+        </picture>
+        <div class="post-description">
+          <ul class="post-description-list">
+            <li>
+              <p>Modern texas home is beautiful and completely kid-friendly</p>
+            </li>
+            <li>
+              <p>October 16, 2023</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <a class="post-more-button-mobile" href="./blog.html">
+      More articles
+      <svg class="arrow-right" width="16" height="16">
+        <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-arrow-right"></use>
+      </svg>
+    </a>
+  </div>
+</section>
+
+
+      <section class="content">
+  <h2>Join Our Newsletter</h2>
+  <p>Sign up for deals, new products and promotions</p>
+  <div class="input-wrapper">
+    <form>
+      <input type="text" placeholder="Email address" />
+      <svg width="24" height="21">
+        <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-email"></use>
+      </svg>
+      <button type="button">Signup</button>
+    </form>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-nav-container">
+      <div class="footer-logo-wrapper">
+        <a class="logo-footer" href="./index.html">3legant<span>.</span> </a>
+        <div class="rectangle"></div>
+        <a class="gift" href="">Gift & Decoration Store</a>
+      </div>
+
+      <ul class="footer-list-nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./product.html">Product</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-wrapper">
+      <ul class="privacy-list-desktop">
+        <li>
+          <p class="copyright">Copyright © 2023 3legant. All rights reserved</p>
+        </li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Terms of Use</a></li>
+      </ul>
+      <ul class="social-list-footer">
+        <li>
+          <button>
+            <svg width="24" height="24">
+              <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-instagram-white"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button>
+            <svg width="24" height="24">
+              <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-facebook"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button>
+            <svg width="24" height="24">
+              <use href="/3legantShopV2/assets/symbol-defs-cff8ee4e.svg#icon-youtube"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="privacy-wrapper">
+      <ul class="privacy-list">
+        <li>
+          <p class="copyright-text">
+            Copyright © 2023 3legant. All rights reserved
+          </p>
+        </li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Terms of Use</a></li>
+      </ul>
+      <p class="copyright-mobile">
+        Copyright © 2023 3legant. All rights reserved
+      </p>
+    </div>
+
+    <!-- </div> -->
+  </div>
+</footer>
+
+    
+  </body>
+</html>
