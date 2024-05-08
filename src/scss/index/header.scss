@@ -46,6 +46,10 @@ nav {
   gap: 8px;
 }
 
+.header-menu li:nth-child(-n + 2) {
+  display: none;
+}
+
 .burger-button {
   width: 24px;
   height: 24px;
@@ -389,6 +393,10 @@ nav {
 
 //=================================TABLET SRYLES==================================================
 @media (min-width: 768px) {
+  .header-menu li:nth-child(-n + 2) {
+    display: block;
+  }
+
   .header-button {
     display: flex;
     align-items: center;

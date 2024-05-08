@@ -7,6 +7,8 @@ const blogArticlesList = document.querySelector('.blog-articles-list');
 
 fullBlogFilterList.addEventListener('click', e => {
   if (e.target.closest('button') == verticalBlogDeskBtn) {
+    blogArticlesList.classList.remove('four-style');
+
     blogArticlesList.classList.remove('nine-style');
     nineBlogBtn.classList.remove('active-filter-button');
     fourBlogBtn.classList.remove('active-filter-button');
@@ -14,6 +16,8 @@ fullBlogFilterList.addEventListener('click', e => {
     verticalBlogDeskBtn.classList.add('active-filter-button');
     blogArticlesList.classList.remove('horizontal-style');
   } else if (e.target.closest('button') == horizontalBlogDeskBtn) {
+    blogArticlesList.classList.remove('four-style');
+
     blogArticlesList.classList.remove('nine-style');
     horizontalBlogDeskBtn.classList.add('active-filter-button');
     verticalBlogDeskBtn.classList.remove('active-filter-button');
@@ -22,6 +26,7 @@ fullBlogFilterList.addEventListener('click', e => {
     blogArticlesList.classList.add('horizontal-style');
   } else if (e.target.closest('button') == fourBlogBtn) {
     blogArticlesList.classList.remove('nine-style');
+    blogArticlesList.classList.add('four-style');
 
     fourBlogBtn.classList.add('active-filter-button');
     blogArticlesList.classList.remove('horizontal-style');
@@ -29,6 +34,8 @@ fullBlogFilterList.addEventListener('click', e => {
     horizontalBlogDeskBtn.classList.remove('active-filter-button');
     verticalBlogDeskBtn.classList.remove('active-filter-button');
   } else {
+    blogArticlesList.classList.remove('four-style');
+
     blogArticlesList.classList.remove('horizontal-style');
     nineBlogBtn.classList.add('active-filter-button');
     horizontalBlogDeskBtn.classList.remove('active-filter-button');

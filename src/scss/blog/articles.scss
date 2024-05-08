@@ -154,6 +154,17 @@
     font-size: 20px;
     line-height: 140%;
   }
+  .four-style {
+    gap: 0 24px !important;
+    .shop-products-list-item {
+      flex: 1 0 calc(50% - 24px);
+      position: relative;
+    }
+    img {
+      object-fit: cover;
+      max-height: 270px;
+    }
+  }
 
   .nine-style {
     .blog-articles-list-item {
@@ -185,5 +196,21 @@
 
   .active-filter-button {
     background: $neutral-02-100 !important;
+  }
+}
+
+@media (min-width: 1158px) {
+  .four-style {
+    img {
+      max-height: 350px;
+    }
+  }
+}
+
+@media (min-width: 1840px) {
+  .four-style {
+    img {
+      max-height: 500px;
+    }
   }
 }

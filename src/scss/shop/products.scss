@@ -94,7 +94,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 7px;
+  gap: 0 7px;
 
   img {
     min-width: 152px;
@@ -125,7 +125,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin: 12px 0 40px 0;
+  margin: 12px 0 20px 0;
 
   h3 {
     font-family: $font-family;
@@ -460,10 +460,20 @@ input:checked + label .radio-button {
     }
   }
 
+  .four-style {
+    gap: 0 24px !important;
+    .shop-products-list-item {
+      flex: 1 0 calc(50% - 24px);
+      position: relative;
+    }
+    img {
+      max-height: 270px;
+    }
+  }
+
   .nine-style {
     .shop-products-list-item {
-      flex: 1 0 auto;
-      flex-basis: calc(33.33% - 20px);
+      flex: 1 0 calc(33.33% - 20px);
       position: relative;
     }
     img {
@@ -487,3 +497,35 @@ input:checked + label .radio-button {
 }
 
 // =======================================================================/TABLET STYLES====================================================================
+
+@media (min-width: 1024px) {
+  .four-style {
+    img {
+      max-height: 320px;
+    }
+  }
+}
+
+@media (min-width: 1158px) {
+  .four-style {
+    img {
+      max-height: 400px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .four-style {
+    img {
+      max-height: 450px;
+    }
+  }
+}
+
+@media (min-width: 1840px) {
+  .four-style {
+    img {
+      max-height: 600px;
+    }
+  }
+}

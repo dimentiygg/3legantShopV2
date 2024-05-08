@@ -29,6 +29,7 @@ const horizontalDeskBtn = document.getElementById('horizontal-desk');
 fullShopFilterList.addEventListener('click', e => {
   if (e.target.closest('button') == verticalDeskBtn) {
     productslist.classList.remove('nine-style');
+    productslist.classList.remove('four-style');
 
     nineBtn.classList.remove('active-filter-button');
     fourBtn.classList.remove('active-filter-button');
@@ -37,6 +38,7 @@ fullShopFilterList.addEventListener('click', e => {
     productslist.classList.remove('horizontal-style');
   } else if (e.target.closest('button') == horizontalDeskBtn) {
     productslist.classList.remove('nine-style');
+    productslist.classList.remove('four-style');
 
     horizontalDeskBtn.classList.add('active-filter-button');
     verticalDeskBtn.classList.remove('active-filter-button');
@@ -45,13 +47,15 @@ fullShopFilterList.addEventListener('click', e => {
     productslist.classList.add('horizontal-style');
   } else if (e.target.closest('button') == fourBtn) {
     productslist.classList.remove('nine-style');
-
     fourBtn.classList.add('active-filter-button');
     productslist.classList.remove('horizontal-style');
+    productslist.classList.add('four-style');
     nineBtn.classList.remove('active-filter-button');
     horizontalDeskBtn.classList.remove('active-filter-button');
     verticalDeskBtn.classList.remove('active-filter-button');
   } else {
+    productslist.classList.remove('four-style');
+
     productslist.classList.remove('horizontal-style');
     nineBtn.classList.add('active-filter-button');
     horizontalDeskBtn.classList.remove('active-filter-button');
