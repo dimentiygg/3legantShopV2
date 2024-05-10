@@ -64,21 +64,23 @@ const emojiInput = document.getElementById('emojiInput');
 const emoji = document.querySelectorAll('.emoji');
 const form = document.getElementById('form');
 
-emojiInput.addEventListener('mouseover', () => {
-  emojiPanel.style.display = 'flex';
-});
+if (window.innerWidth >= 1024) {
+  emojiInput.addEventListener('mouseover', () => {
+    emojiPanel.style.display = 'flex';
+  });
 
-document.addEventListener('click', event => {
-  if (
-    event.target != emojiPanel &&
-    event.target != emojiInput &&
-    event.target != emoji[0] &&
-    event.target != emoji[1] &&
-    event.target != emoji[2] &&
-    event.target != emoji[3] &&
-    event.target != emoji[4] &&
-    event.target != emoji[5]
-  ) {
-    emojiPanel.style.display = 'none';
-  }
-});
+  document.addEventListener('click', event => {
+    if (
+      event.target != emojiPanel &&
+      event.target != emojiInput &&
+      event.target != emoji[0] &&
+      event.target != emoji[1] &&
+      event.target != emoji[2] &&
+      event.target != emoji[3] &&
+      event.target != emoji[4] &&
+      event.target != emoji[5]
+    ) {
+      emojiPanel.style.display = 'none';
+    }
+  });
+}

@@ -1,0 +1,49 @@
+<section class="feature-section">
+  <div class="container">
+    <div class="feature-wrapper">
+      <picture>
+        <!-- <source
+              media="(min-width: 1440px)"
+              srcset=""
+              type="image/png"
+            /> -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/others/desktop/interior.png    1x,
+            ./img/others/desktop/interior@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/others/mobile/interior.png    1x,
+            ./img/others/mobile/interior@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="feature-img"
+          alt="comfortable sofa"
+          src="./img/others/mobile/interior.png"
+        />
+      </picture>
+
+      <div class="feature-container">
+        <h2>About Us</h2>
+        <p>
+          3legant is a gift & decorations store based in HCMC, Vietnam. Est
+          since 2019. Our customer service is always prepared to support you
+          24/7
+        </p>
+        <a class="feature-button" href="./shop.html">
+          Shop Now
+          <svg class="arrow-right" width="16" height="16">
+            <use href="./public/symbol-defs.svg#icon-arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
