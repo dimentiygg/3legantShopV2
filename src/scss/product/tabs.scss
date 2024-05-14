@@ -240,6 +240,12 @@
   letter-spacing: -0.03em;
   text-align: center;
   color: $neutral-07-100;
+
+  &:hover,
+  &:focus {
+    background-color: $neutral-07-100;
+    color: $neutral-01-100;
+  }
 }
 
 .review-container {

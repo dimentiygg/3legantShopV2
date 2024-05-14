@@ -52,3 +52,29 @@ accordion.addEventListener('click', event => {
     }
   }
 });
+
+const headerNavs = document.querySelectorAll('.header-nav-menu p');
+
+headerNavMenu.addEventListener('click', event => {
+  if (event.target.textContent == 'Home') {
+    event.target.classList.add('active');
+    headerNavs[1].classList.remove('active');
+    headerNavs[2].classList.remove('active');
+    headerNavs[3].classList.remove('active');
+  } else if (event.target.textContent == 'Shop') {
+    event.target.classList.add('active');
+    headerNavs[0].classList.remove('active');
+    headerNavs[2].classList.remove('active');
+    headerNavs[3].classList.remove('active');
+  } else if (event.target.textContent == 'Product') {
+    event.target.classList.add('active');
+    headerNavs[0].classList.remove('active');
+    headerNavs[1].classList.remove('active');
+    headerNavs[3].classList.remove('active');
+  } else {
+    event.target.classList.add('active');
+    headerNavs[0].classList.remove('active');
+    headerNavs[1].classList.remove('active');
+    headerNavs[2].classList.remove('active');
+  }
+});

@@ -53,6 +53,10 @@
   background: $neutral-02-100 !important;
 }
 
+.active-filter-svg {
+  fill: black !important;
+}
+
 .shop-sort-wrapper {
   display: flex;
   flex-direction: row;
@@ -271,10 +275,20 @@
   letter-spacing: -0.03em;
   text-align: center;
   color: $neutral-07-100;
+
+  &:hover,
+  &:focus {
+    background-color: $neutral-07-100;
+    color: $neutral-01-100;
+  }
 }
 
 .full-shop-filter-list {
   display: none;
+
+  svg {
+    fill: #6c7275;
+  }
 }
 .desktop-filters {
   padding: 20px;

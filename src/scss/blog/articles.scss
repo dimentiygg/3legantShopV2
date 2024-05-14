@@ -56,6 +56,12 @@
   letter-spacing: -0.03em;
   text-align: center;
   color: $neutral-07-100;
+
+  &:hover,
+  &:focus {
+    background-color: $neutral-07-100;
+    color: $neutral-01-100;
+  }
 }
 
 .blog-select-mobile {
@@ -182,6 +188,10 @@
   .full-blog-filter-list {
     display: flex;
 
+    svg {
+      fill: #6c7275;
+    }
+
     button {
       border: 1px solid $neutral-03-100;
       width: 46px;
@@ -196,6 +206,10 @@
 
   .active-filter-button {
     background: $neutral-02-100 !important;
+  }
+
+  .active-filters-svg {
+    fill: black !important;
   }
 }
 
