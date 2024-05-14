@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3legant shop</title>
     
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: 'QJVZ-ImKvAA2vmK-b',
+        });
+      })();
+    </script>
     <script type="module" crossorigin src="/3legantShopV2/commonHelpers4.js"></script>
     <link rel="modulepreload" crossorigin href="/3legantShopV2/assets/vendor-32767f66.js">
-    <link rel="modulepreload" crossorigin href="/3legantShopV2/assets/footer-da5d75d8.js">
+    <link rel="modulepreload" crossorigin href="/3legantShopV2/assets/footer-010760e1.js">
+    <link rel="modulepreload" crossorigin href="/3legantShopV2/assets/content-26b88ee6.js">
     <link rel="stylesheet" href="/3legantShopV2/assets/vendor-24abd9de.css">
     <link rel="stylesheet" href="/3legantShopV2/assets/index-f5ded499.css">
   </head>
@@ -16,19 +29,19 @@
     <header>
   <div class="announcement">
     <svg width="17" height="16">
-      <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-ticket"></use>
+      <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-ticket"></use>
     </svg>
     <p>30% off storewide — Limited time!</p>
     <a class="header-button" href="./shop.html">
       Shop Now
       <svg class="arrow-right" width="16" height="16">
-        <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-arrow-right"></use>
+        <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-arrow-right"></use>
       </svg>
     </a>
 
     <button class="close-button" type="button">
       <svg width="11" height="10">
-        <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-close"></use>
+        <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-close"></use>
       </svg>
     </button>
   </div>
@@ -39,7 +52,7 @@
         <li>
           <button class="burger-button" type="button">
             <svg class="burger-icon" width="12" height="10">
-              <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-burger"></use>
+              <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-burger"></use>
             </svg>
           </button>
         </li>
@@ -57,21 +70,21 @@
         <li>
           <button class="header-nav-button" type="button">
             <svg class="header-nav-icon" width="22" height="20">
-              <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-search"></use>
+              <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-search"></use>
             </svg>
           </button>
         </li>
         <li>
           <button class="header-nav-button" type="button">
             <svg class="header-nav-icon" width="22" height="22">
-              <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-user"></use>
+              <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-user"></use>
             </svg>
           </button>
         </li>
         <li>
           <button class="header-nav-button" type="button">
             <svg class="header-nav-icon" width="22" height="22">
-              <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-shopping-bag"></use>
+              <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-shopping-bag"></use>
             </svg>
           </button>
         </li>
@@ -87,11 +100,11 @@
         <a class="logo" href="./index.html">3legant<span>.</span></a>
         <button class="mobile-close-button" type="button">
           <svg width="16" height="16">
-            <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-close"></use>
+            <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-close"></use>
           </svg>
         </button>
         <svg class="search-icon" width="22" height="22">
-          <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-search"></use>
+          <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-search"></use>
         </svg>
         <input type="text" placeholder="search" />
 
@@ -108,7 +121,7 @@
                 title="down"
               >
                 <svg class="arrow">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-down"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-down"></use>
                 </svg>
               </button>
             </a>
@@ -129,7 +142,7 @@
                 title="down"
               >
                 <svg class="arrow">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-down"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-down"></use>
                 </svg>
               </button>
             </a>
@@ -155,7 +168,7 @@
                 <button class="shopping-bag-button" type="button">
                   <svg class="shopping-bag-icon" width="22" height="22">
                     <use
-                      href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-shopping-bag"
+                      href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-shopping-bag"
                     ></use>
                   </svg>
                 </button>
@@ -171,7 +184,7 @@
               <li>
                 <button class="heart-button">
                   <svg class="heart" width="22" height="19">
-                    <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-heart"></use>
+                    <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-heart"></use>
                   </svg>
                 </button>
               </li>
@@ -187,21 +200,21 @@
           <li>
             <button>
               <svg width="24" height="24">
-                <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-instagram"></use>
+                <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-instagram"></use>
               </svg>
             </button>
           </li>
           <li>
             <button>
               <svg width="24" height="24">
-                <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-facebook"></use>
+                <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-facebook"></use>
               </svg>
             </button>
           </li>
           <li>
             <button>
               <svg width="24" height="24">
-                <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-youtube"></use>
+                <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-youtube"></use>
               </svg>
             </button>
           </li>
@@ -298,14 +311,14 @@
       <div class="swiper-button-prev">
         <button class="sbp">
           <svg width="32" height="32">
-            <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-arrow-right"></use>
+            <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-arrow-right"></use>
           </svg>
         </button>
       </div>
       <div class="swiper-button-next">
         <button class="sbn">
           <svg width="32" height="32">
-            <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-arrow-right"></use>
+            <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-arrow-right"></use>
           </svg>
         </button>
       </div>
@@ -349,7 +362,7 @@
       <a class="living-room-button" href="./shop.html">
         Shop Now
         <svg class="arrow-right" width="16" height="16">
-          <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-arrow-right"></use>
+          <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-arrow-right"></use>
         </svg>
       </a>
     </div>
@@ -372,7 +385,7 @@
         <a href="./shop.html" class="bedroom-button">
           Shop Now
           <svg class="arrow-right" width="16" height="16">
-            <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-arrow-right"></use>
+            <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-arrow-right"></use>
           </svg>
         </a>
       </li>
@@ -394,7 +407,7 @@
         <a href="./shop.html" class="kitchen-button">
           Shop Now
           <svg class="arrow-right" width="16" height="16">
-            <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-arrow-right"></use>
+            <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-arrow-right"></use>
           </svg>
         </a>
       </li>
@@ -430,27 +443,27 @@
             <ul class="raiting-list">
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
             </ul>
@@ -467,7 +480,7 @@
             </ul>
             <button class="favourites" type="button">
               <svg width="20" height="20">
-                <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-heart"></use>
+                <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-heart" id="href"></use>
               </svg>
             </button>
           </div>
@@ -493,27 +506,27 @@
             <ul class="raiting-list">
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
             </ul>
@@ -533,7 +546,7 @@
             </ul>
             <button class="favourites" type="button">
               <svg width="20" height="20">
-                <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-heart"></use>
+                <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-heart"></use>
               </svg>
             </button>
           </div>
@@ -559,27 +572,27 @@
             <ul class="raiting-list">
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
             </ul>
@@ -596,7 +609,7 @@
             </ul>
             <button class="favourites" type="button">
               <svg width="20" height="20">
-                <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-heart"></use>
+                <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-heart"></use>
               </svg>
             </button>
           </div>
@@ -622,27 +635,27 @@
             <ul class="raiting-list">
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
             </ul>
@@ -659,7 +672,7 @@
             </ul>
             <button class="favourites" type="button">
               <svg width="20" height="20">
-                <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-heart"></use>
+                <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-heart"></use>
               </svg>
             </button>
           </div>
@@ -685,27 +698,27 @@
             <ul class="raiting-list">
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
             </ul>
@@ -722,7 +735,7 @@
             </ul>
             <button class="favourites" type="button">
               <svg width="20" height="20">
-                <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-heart"></use>
+                <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-heart"></use>
               </svg>
             </button>
           </div>
@@ -748,27 +761,27 @@
             <ul class="raiting-list">
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
             </ul>
@@ -785,7 +798,7 @@
             </ul>
             <button class="favourites" type="button">
               <svg width="20" height="20">
-                <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-heart"></use>
+                <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-heart"></use>
               </svg>
             </button>
           </div>
@@ -811,27 +824,27 @@
             <ul class="raiting-list">
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
               <li>
                 <svg width="16" height="16">
-                  <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-star"></use>
+                  <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-star"></use>
                 </svg>
               </li>
             </ul>
@@ -848,7 +861,7 @@
             </ul>
             <button class="favourites" type="button">
               <svg width="20" height="20">
-                <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-heart"></use>
+                <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-heart"></use>
               </svg>
             </button>
           </div>
@@ -858,7 +871,7 @@
     <a class="more-products-button" href="./shop.html">
       More Products
       <svg class="arrow-right" width="16" height="16">
-        <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-arrow-right"></use>
+        <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-arrow-right"></use>
       </svg>
     </a>
   </div>
@@ -870,7 +883,7 @@
       <li>
         <div class="values-card-container">
           <svg class="values-svgs" width="48" height="48">
-            <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-delivery"></use>
+            <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-delivery"></use>
           </svg>
           <h3>Free Shipping</h3>
           <p>Order above $200</p>
@@ -879,7 +892,7 @@
       <li>
         <div class="values-card-container">
           <svg class="values-svgs" width="48" height="48">
-            <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-money"></use>
+            <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-money"></use>
           </svg>
           <h3>Money-back</h3>
           <p>30 days guarantee</p>
@@ -888,7 +901,7 @@
       <li>
         <div class="values-card-container">
           <svg class="values-svgs" width="48" height="48">
-            <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-lock"></use>
+            <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-lock"></use>
           </svg>
           <h3>Secure Payments</h3>
           <p>Secured by Stripe</p>
@@ -897,7 +910,7 @@
       <li>
         <div class="values-card-container">
           <svg class="values-svgs" width="48" height="48">
-            <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-call"></use>
+            <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-call"></use>
           </svg>
           <h3>24/7 Support</h3>
           <p>Phone and Email support</p>
@@ -941,7 +954,7 @@
     <a class="banner-button" href="./shop.html">
       Shop Now
       <svg class="arrow-right" width="16" height="16">
-        <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-arrow-right"></use>
+        <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-arrow-right"></use>
       </svg>
     </a>
   </div>
@@ -954,7 +967,7 @@
       <a class="banner-button" href="./blog.html">
         More Articles
         <svg class="arrow-right" width="16" height="16">
-          <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-arrow-right"></use>
+          <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-arrow-right"></use>
         </svg>
       </a>
     </div>
@@ -978,7 +991,7 @@
         <a class="banner-button" href="./blog.html">
           Read More
           <svg class="arrow-right" width="16" height="16">
-            <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-arrow-right"></use>
+            <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-arrow-right"></use>
           </svg>
         </a>
       </li>
@@ -1001,7 +1014,7 @@
         <a class="banner-button" href="./blog.html">
           Read More
           <svg class="arrow-right" width="16" height="16">
-            <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-arrow-right"></use>
+            <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-arrow-right"></use>
           </svg>
         </a>
       </li>
@@ -1024,7 +1037,7 @@
         <a class="banner-button" href="./blog.html">
           Read More
           <svg class="arrow-right" width="16" height="16">
-            <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-arrow-right"></use>
+            <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-arrow-right"></use>
           </svg>
         </a>
       </li>
@@ -1037,11 +1050,11 @@
   <p>Sign up for deals, new products and promotions</p>
   <div class="input-wrapper">
     <form>
-      <input type="text" placeholder="Email address" />
+      <input type="email" placeholder="Email address" name="email" />
       <svg width="24" height="21">
-        <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-email"></use>
+        <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-email"></use>
       </svg>
-      <button type="button">Signup</button>
+      <button type="submit">Signup</button>
     </form>
   </div>
 </section>
@@ -1077,21 +1090,21 @@
         <li>
           <button>
             <svg width="24" height="24">
-              <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-instagram-white"></use>
+              <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-instagram-white"></use>
             </svg>
           </button>
         </li>
         <li>
           <button>
             <svg width="24" height="24">
-              <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-facebook"></use>
+              <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-facebook"></use>
             </svg>
           </button>
         </li>
         <li>
           <button>
             <svg width="24" height="24">
-              <use href="/3legantShopV2/assets/symbol-defs-ae0cd010.svg#icon-youtube"></use>
+              <use href="/3legantShopV2/assets/symbol-defs-8504487b.svg#icon-youtube"></use>
             </svg>
           </button>
         </li>

@@ -1,0 +1,2 @@
+const e=document.querySelector(".input-wrapper form");e.addEventListener("submit",function(o){o.preventDefault(),e.querySelector('input[type="email"]').value;const n=e.querySelector('input[type="email"]').value;n.trim()!==""&&emailjs.send("service_12rfup7","template_8s0bf5o",{to_email:n}).then(function(t){console.log("Письмо успешно отправлено!",t),e.reset()},function(t){console.error("Ошибка отправки письма:",t)})});
+//# sourceMappingURL=content-26b88ee6.js.map
