@@ -9,29 +9,22 @@ const swiper2 = new Swiper('.swiper2', {
 });
 
 const carouselList = document.querySelector('.carousel-list');
-
 carouselList.addEventListener('click', event => {
-  const heartButton = event.target
-    .closest('button')
-    .classList.contains('favourites');
-
-  const svgIcon = event.target.closest('button').querySelector('use');
-
-  if (heartButton) {
+  if (
+    event.target.tagName != 'IMG' &&
+    event.target.tagName != 'P' &&
+    event.target.tagName != 'DIV' &&
+    !event.target.classList.contains('add-to-cart')
+  ) {
+    const svgIcon = event.target.closest('button').querySelector('use');
     const currentHref = svgIcon.getAttribute('href');
-    if (
-      currentHref ===
-      '../../../../3legantShopV2/src/public/symbol-defs.svg#icon-black-heart'
-    ) {
-      svgIcon.setAttribute(
-        'href',
-        '../../../../3legantShopV2/src/public/symbol-defs.svg#icon-heart'
-      );
+    if (currentHref === '../../public/symbol-defs.svg#icon-black-heart') {
+      svgIcon.setAttribute('href', '../../public/symbol-defs.svg#icon-heart');
       svgIcon.closest('svg').style.fill = '#6c7275';
     } else {
       svgIcon.setAttribute(
         'href',
-        '../../../../3legantShopV2/src/public/symbol-defs.svg#icon-black-heart'
+        '../../public/symbol-defs.svg#icon-black-heart'
       );
       svgIcon.closest('svg').style.fill = 'black';
     }

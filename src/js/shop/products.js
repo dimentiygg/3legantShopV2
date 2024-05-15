@@ -138,13 +138,13 @@ window.addEventListener('click', e => {
 const shopProductsList = document.querySelector('.shop-products-list');
 
 shopProductsList.addEventListener('click', event => {
-  const heartButton = event.target
-    .closest('button')
-    .classList.contains('favourites');
-
-  const svgIcon = event.target.closest('button').querySelector('use');
-
-  if (heartButton) {
+  if (
+    event.target.tagName != 'IMG' &&
+    event.target.tagName != 'P' &&
+    event.target.tagName != 'DIV' &&
+    !event.target.classList.contains('add-to-cart')
+  ) {
+    const svgIcon = event.target.closest('button').querySelector('use');
     const currentHref = svgIcon.getAttribute('href');
     if (currentHref === './public/symbol-defs.svg#icon-black-heart') {
       svgIcon.setAttribute('href', './public/symbol-defs.svg#icon-heart');
