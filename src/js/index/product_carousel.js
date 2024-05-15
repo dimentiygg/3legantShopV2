@@ -20,17 +20,18 @@ carouselList.addEventListener('click', event => {
   if (heartButton) {
     const currentHref = svgIcon.getAttribute('href');
     if (
-      currentHref === '../../../src/public/symbol-defs.svg#icon-black-heart'
+      currentHref ===
+      '../../../../3legantShopV2/src/public/symbol-defs.svg#icon-black-heart'
     ) {
       svgIcon.setAttribute(
         'href',
-        '../../../src/public/symbol-defs.svg#icon-heart'
+        '../../../../3legantShopV2/src/public/symbol-defs.svg#icon-heart'
       );
       svgIcon.closest('svg').style.fill = '#6c7275';
     } else {
       svgIcon.setAttribute(
         'href',
-        '../../../src/public/symbol-defs.svg#icon-black-heart'
+        '../../../../3legantShopV2/src/public/symbol-defs.svg#icon-black-heart'
       );
       svgIcon.closest('svg').style.fill = 'black';
     }
