@@ -19,11 +19,14 @@ carouselList.addEventListener('click', event => {
 
   if (heartButton) {
     const currentHref = svgIcon.getAttribute('href');
-    if (currentHref === './assets/symbol-defs.svg#icon-black-heart') {
-      svgIcon.setAttribute('href', './assets/symbol-defs.svg#icon-heart');
+    if (currentHref === '../../public/symbol-defs.svg#icon-black-heart') {
+      svgIcon.setAttribute('href', '../../public/symbol-defs.svg#icon-heart');
       svgIcon.closest('svg').style.fill = '#6c7275';
     } else {
-      svgIcon.setAttribute('href', './assets/symbol-defs.svg#icon-black-heart');
+      svgIcon.setAttribute(
+        'href',
+        '../../public/symbol-defs.svg#icon-black-heart'
+      );
       svgIcon.closest('svg').style.fill = 'black';
     }
   }
